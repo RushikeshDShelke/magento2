@@ -4,7 +4,7 @@
  
     <target name="fetch" description="copy extension to test server">
          <exec executable="rsync" failonerror="true">
-              <arg line="'-u root rsync' -rv /home/galera/public_html/app/ galera@10.0.0.4:/home/galera/public_html/app/" />
+              <arg line="-rv /home/galera/public_html/app/ galera@10.0.0.4:/home/galera/public_html/app/" />
          </exec>
    </target>
    <target name="upgrade" description="set up and upgrade">
