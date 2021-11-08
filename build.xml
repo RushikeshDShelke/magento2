@@ -14,7 +14,7 @@
    </target>
    <target name="deploy" description="set up and upgrade">
          <exec executable="ssh" failonerror="true">
-              <arg line="galera@10.0.0.4 php /home/galera/public_html/bin/magento setup:static-content:deploy" />
+              <arg line="galera@10.0.0.4 php /home/galera/public_html/bin/magento setup:static-content:deploy -f" />
          </exec>
    </target>
    <target name="casperjs" description="Run casperjs">
