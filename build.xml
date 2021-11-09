@@ -17,11 +17,17 @@
               <arg line="galera@10.0.0.4 php /home/galera/public_html/bin/magento setup:static-content:deploy -f" />
          </exec>
    </target>
+   <target name="casperjs" description="Run casperjs">
+         <exec executable="ssh" failonerror="true">
+              <arg line="galera@10.0.0.4 casperjs run.js" />
+         </exec>
+   </target>
    <target name="run task" description="Run target one by one">
       <sequential>
          <antcall target="fetch" />
          <antcall target="upgrade" />
          <antcall target="deploy" />
-      </sequential>
+         <antcall target="casperjs" />
+       </sequential>
    </target>
 </project>
