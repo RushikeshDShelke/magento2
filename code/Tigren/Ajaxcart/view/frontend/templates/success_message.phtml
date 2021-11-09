@@ -1,0 +1,65 @@
+<?php
+/**
+ * @copyright Copyright (c) 2016 www.tigren.com
+ */
+?>
+<?php $_product = $block->getProduct(); ?>
+<?php /* <div class="mb-login-popup-title">
+    <strong><?php echo __('Success'); ?></strong>
+</div> */ ?>
+<div class="mb-ajaxsuite-popup-border ajaxcart-success-box">
+
+    <div class="row">
+        <div class="col-xs-12 col-md-7">
+            <?php echo $block->getChildHtml('ajaxcart.message'); ?>
+
+            <div class="image-left col-xs-12 col-sm-4">
+                <?php echo $block->getChildHtml('product_image'); ?>
+            </div>
+            <div class="details-right col-xs-12 col-sm-8">
+                <h2 class="product-name"><?php echo $_product->getName() ?></h2>
+                <?php echo $block->getChildHtml('product_option'); ?>
+            </div>
+            <div class="subtotal col-xs-12">
+                <?php echo $block->getChildHtml('ajaxcart.cartinfo'); ?>
+            </div>
+
+
+            <div class="ajaxcart-buttons ajaxsuite-buttons">
+                <button type="button" id="ajaxcart_cancel" class="col-md-12 col-xs-12 col-sm-6 action primary mb-ajaxsuite-close"
+                        title="<?php echo __('Continue Shopping') ?>">
+                    <span><?php echo __('Back to Shopping ') ?></span>
+                    <?php
+                    if ($popupTTL = $this->helper('Tigren\Ajaxsuite\Helper\Data')->getTTLAjaxSuite()) {
+                        ?>
+                        (<span class="ajaxsuite-autoclose-countdown"><?php echo $popupTTL ?></span>)
+                        <?php
+                    }
+                    ?>
+                </button>
+                <button type="button" id="ajaxcart_checkout" class="col-md-12 col-xs-12 col-sm-6 action focus primary"
+                        title="<?php echo __('View Cart') ?>"
+                        onClick="window.location = '<?php echo $block->getUrl('checkout/cart'); ?>'">
+                    <span><?php echo __('View Cart & Checkout') ?></span>
+                </button>
+            </div>
+            <div class="min-ship-notify">
+                <?= $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('minimum_shipping_notification')
+                                   ->toHtml();
+                ?>
+            </div>
+        </div>
+        <?php /*shraddha <div class="col-md-5 hidden-xs hidden-sm related-products">
+            <div class="success-content">
+
+                <?php echo $block->getChildHtml('ajaxcart.product.related'); ?>
+            </div>
+        </div>*/?>
+    </div>
+
+    <?php /*<div class="row bottom-affirmations">
+        <?php echo $block->getChildHtml('bottom.affirmations'); ?>
+    </div>*/?>
+
+</div>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="checkout.cart.container">
+            <!-- custom block for notification -->
+            <container name="minimum-shipping-notification" htmlTag="div" htmlClass="min-ship-notify">
+                <block class="Magento\Cms\Block\Block" name="minimum_shipping_notification" before="ampromo.add">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">minimum_shipping_notification</argument>
+                    </arguments>
+                </block>
+            </container>
+            <!-- end -->
+            <container name="cart.discount" label="Cart Discount Container" htmlTag="div" htmlClass="cart-discount" after="-" />
+        </referenceContainer>
+        <move element="checkout.cart.crosssell" destination="checkout.cart.container" after="-" />
+        <move element="checkout.cart.coupon" destination="cart.discount" />
+        <move element="checkout.cart.shortcut.buttons" destination="checkout.cart.methods" after="checkout.cart.methods.onepage.bottom"/>
+        <referenceBlock name="tspace.crosssell" remove="true"/>
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceContainer name="checkout.cart.container">
+            <block class="Magento\Checkout\Block\Cart" name="tspace.checkout.cart.methods.bottom" template="cart/methods.phtml" before="-">
+                <container name="tspace.checkout.cart.methods" as="methods" label="Payment Methods After Checkout Button">
+                    <block class="Magento\Checkout\Block\Onepage\Link" name="tspace.checkout.cart.methods.onepage.bottom" template="onepage/link.phtml" />
+                    <block class="Magento\Checkout\Block\QuoteShortcutButtons" name="tspace.checkout.cart.shortcut.buttons" />
+                </container>
+            </block>
+        </referenceContainer>
+        <move element="cart.summary" destination="checkout.cart.container" after="checkout.cart.form"/>
+        <referenceBlock name="checkout.cart.crosssell" remove="true"/>
+        <referenceContainer name="content">
+            <!--<block class="Magebees\Mostviewed\Block\Mostviewed" name="mostviewed" ifconfig="mostviewed/setting/enable" after="checkout.cart"/>-->
+            <block class="Magento\Cms\Block\Block" name="cart.product.risk.free.shiping" after="mostviewed">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">free_shipping_conviction_block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="checkout.cart.shipping">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="block-summary" xsi:type="array">
+
+                            <!-- My custom part: -->
+                            <item name="config" xsi:type="array">
+                                <item name="componentDisabled" xsi:type="boolean">true</item>
+                            </item>
+
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+
+    </body>
+</page>

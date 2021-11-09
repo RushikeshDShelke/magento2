@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Magento\Sales\Block\Order\Totals" type="M2s\Vouchagram\Block\Order\Totals" />
+	<preference for="Magento\Sales\Block\Adminhtml\Totals" type="M2s\Vouchagram\Block\Adminhtml\Totals" />
+	<preference for="Magento\Sales\Model\Order\Pdf\Invoice" type="M2s\Vouchagram\Model\Adminhtml\Invoice" />
+	<preference for="Magento\Checkout\Controller\Onepage\SaveOrder" type="M2s\Vouchagram\Controller\Onepage\SaveOrder" />
+	<type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="m2s_vouchagram_add_order_extension_attribute"
+                type="M2s\Vouchagram\Plugin\OrderRepositoryPlugin" /> 
+    </type>
+</config>

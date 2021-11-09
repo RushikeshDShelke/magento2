@@ -1,0 +1,18 @@
+
+fieldset#contact-form-heading,fieldset#fldset-contacttype{margin: 0;}
+
+fieldset#fldset-contacttype,fieldset#fldset-additional{
+    border: 1px solid #e8e4e4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+fieldset#fldset-contacttype .field > .label{margin-top: 8px;}
+fieldset h4.h4-contact-us{font-family: verdana, Arial, Helvetica, sans-serif;}
+
+@media (min-width: 768px){
+
+    .column:not(.sidebar-main) .form.contact,
+    .column:not(.sidebar-additional) .form.contact{width:450px!important;float: left!important;}
+}

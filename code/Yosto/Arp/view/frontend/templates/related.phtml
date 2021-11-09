@@ -1,0 +1,14 @@
+<?php
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+?>
+
+<?php
+    $productIds = $block->getMatchedProductIds();
+?>
+<?php echo json_encode($productIds) ?>
+<?php foreach ($productIds as $id): ?>
+<!--    <h4>--><?//=$id ?><!--</h4>-->
+<?php endforeach;?>

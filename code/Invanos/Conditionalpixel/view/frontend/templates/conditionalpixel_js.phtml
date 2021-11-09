@@ -1,0 +1,56 @@
+<?php
+
+$moduleStatus = $block->isEnabled(); // checking module status
+$pixelParameters = $block->getConditionalPixelName(); // checking cookie parameters from backend
+$pixelParaToArr = explode(",", $pixelParameters); // converting into array
+
+$queryPara = $_SERVER['QUERY_STRING']; // get query parameters from url
+$convertQueryParaToComma = str_replace(str_split('\\/=&%'), ',', $queryPara); // replace characters with comma
+$convertQryParaToArr = explode(",", $convertQueryParaToComma); // converting into array
+
+$compareArrVal = array_intersect($pixelParaToArr, $convertQryParaToArr); // comparing the two arrays
+
+$compareArrValCount = count($compareArrVal);
+$pixelParaToArrCount = count($pixelParaToArr);
+
+?>
+
+<script type="text/javascript">
+require(['jquery', 'jquery/ui'], function($){
+    
+    var moduleStatus = "<?php echo $moduleStatus; ?>";
+
+    var baseUrl = window.location.origin;
+    var fullUrl = window.location.href;
+    var compareArrValCount = "<?php echo $compareArrValCount; ?>";
+    var pixelParaToArrCount = "<?php echo $pixelParaToArrCount; ?>";
+    
+    var requestUrl = baseUrl+"/conditionalpixel"; 
+
+    if (moduleStatus == 1)
+    {
+        // if(compareArrValCount == pixelParaToArrCount)
+        if(compareArrValCount > 0)
+        {
+            $(document).ready(function(){
+                // console.log('inside ajax');
+                $.ajax({
+                    url : requestUrl,
+                    type : 'POST',
+                    data : {
+                        'url' : fullUrl
+                    },
+                    dataType:'json',
+                    success : function(data) {              
+                        console.log(JSON.stringify(data));
+                    },
+                    error : function(request,error)
+                    {
+                        console.log("Request: "+JSON.stringify(request));
+                    }
+                });
+            });
+        }
+    }
+});
+</script>

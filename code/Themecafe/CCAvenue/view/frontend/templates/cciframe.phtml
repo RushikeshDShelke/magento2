@@ -1,0 +1,57 @@
+<?php
+$url = $this->_getURL();
+$this->_getToken();
+?>
+<div class="holder">
+    <div class="iframe-text-center">
+        <p class="iframe-title">Payment</p>
+        <h3>Please be patient.</h3> 
+        <p class="red">Do not "close the window" or press "refresh" or "browser back button". </p>
+        <div class="iframe-holder">
+            <iframe src="<?php echo $url ?>" id="paymentFrame" width="100%" height="600" frameborder="0" scrolling="No"></iframe>
+        </div>
+    </div>
+</div>
+<style>
+    li.opc-progress-bar-item._complete:hover {
+        cursor: default;
+    }
+    .red{color: red;}
+    .holder{
+        margin: 0 auto;text-align: center;
+    }
+    .iframe-text-center {
+        width:50%; margin: 0 auto;text-align: center;border: 1px solid #ddd;    background: #fffeef;
+    }
+    .iframe-holder {
+        border: 1px solid #e4e4e4;
+        border-width: 1px 0;
+        background: #fff;
+    }
+    .top-border
+    {
+        border-top: 1px solid #ddd;
+    }
+    .iframe-title{
+        display: block;
+        background-color: #f1f1f1;
+        padding: 0 10px;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ddd;
+        line-height: 48px;
+        z-index: 9;
+        top: 0;
+        text-align: left
+    }
+    .minicart-wrapper.cart-mini
+    {
+        display: none
+    }
+    @media (max-width: 768px){
+        body.ccavenue-ccavenue-redirect .iframe-text-center {
+            width:100%;
+        }
+    }
+</style>

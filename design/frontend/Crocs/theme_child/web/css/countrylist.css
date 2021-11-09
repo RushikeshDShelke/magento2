@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    height: 100%;
+    line-height: 1;
+}
+body {
+    font-family: MuseoRounded300,Arial,Helvetica,sans-serif;
+}
+.background {
+    left: 0;
+    min-height: 1400px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#wrapper {
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    width: 960px;
+}
+#countryselheader {
+    background-image: url("../images/countrySel_headerBg_norpt.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    margin: 0;
+    width: 970px;
+}
+#countryselbody {
+    background-color: #fff;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+#countryselbody #selectcountry {
+    left: 710px;
+    position: absolute;
+    top: 60px;
+    width: 242px;
+}
+#countryselbody #selectcountry ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#countryselbody #selectcountry ul li {
+    clear: both;
+    color: #666;
+    display: block;
+    float: left;
+    height: 25px;
+    width: 242px;
+}
+#countryselbody #selectcountry ul li span {
+    display: block;
+    padding: 3px 20px 0 0;
+}
+#countryselbody #selectcountry ul li.selectcountrytop {
+    height: 25px;
+    width: 242px;
+}
+#countryselbody #selectcountry ul li.selectcountrybtm {
+    height: 25px;
+    width: 242px;
+}
+#countrywrap {
+    background: url("../images/verticalHairline.png") no-repeat scroll 650px -94px rgba(0, 0, 0, 0);
+    height: 350px;
+    left: 20px;
+    position: relative;
+    top: 20px;
+    width: 670px;
+}
+#countryselmap {
+    height: 310px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 605px;
+    z-index: 2;
+}
+#countryselmap ul#continents {
+    background: url("../images/countrySelMap.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 274px;
+    left: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 20px;
+    width: 564px;
+}
+ul#continents li {
+    position: absolute;
+}
+ul#continents li a {
+    display: block;
+    height: 100%;
+    text-indent: -9000px;
+}
+#northamerica {
+    height: 152px;
+    left: 0;
+    top: 2px;
+    width: 242px;
+}
+ul#continents li#northamerica a:hover {
+    background-position: -10px -292px;
+}
+#southamerica {
+    height: 136px;
+    left: 102px;
+    top: 141px;
+    width: 92px;
+}
+ul#continents li#southamerica a:hover {
+    background-position: -139px -451px;
+}
+#africa {
+    height: 152px;
+    left: 218px;
+    top: 90px;
+    width: 130px;
+}
+ul#continents li#africa a:hover {
+    background-position: -262px -501px;
+}
+#europe {
+    height: 94px;
+    left: 237px;
+    top: 2px;
+    width: 280px;
+}
+ul#continents li#europe a:hover {
+    background-position: -8px -664px;
+}
+#asia {
+    height: 137px;
+    left: 296px;
+    top: 53px;
+    width: 225px;
+}
+ul#continents li#asia a:hover {
+    background-position: -276px -321px;
+}
+#australia {
+    height: 101px;
+    left: 442px;
+    top: 165px;
+    width: 114px;
+}
+ul#continents li#australia a:hover {
+    background-position: -412px -490px;
+}
+ul#continents li a:hover {
+    background: url("../images/countrySelMap.png") no-repeat scroll 0 0 transparent;
+}
+#countrylists {
+    background-color: #f6f6f6;
+    display: none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    left: 0;
+    margin: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    position: relative;
+    width: 667px;
+}
+#countrylists a:link, #countrylists a:visited {
+    color: #098abb;
+    text-decoration: none;
+}
+#countrylists a:hover, #countrylists a:focus, #countrylists a:active {
+    color: #000000;
+    text-decoration: none;
+}
+#countrylists ul {
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 565px;
+}
+#asialst, #australialst, #europeLst, #namericalst, #samericalst, #africalst {
+    display: none;
+}
+#countrylists ul li {
+    float: left;
+}
+#countrylists ul li ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 188px;
+}
+#countrylists ul li ul li {
+    float: none;
+    margin-bottom: 5px;
+    padding-left: 12px;
+}
+#countrylists ul li ul li p, #countrylists ul li ul li img {
+    display: none;
+}
+#countrylists ul li ul li.active {
+    background-color: #cbe3ea;
+    background-image: none;
+    border: 1px solid #b4b8ba;
+    color: #5b8e00;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 10px 10px 7px;
+}
+#countrylists ul li ul li.active a {
+    letter-spacing: -1px;
+}
+#countrylists ul li ul li.active a:link, #countrylists ul li ul li.active a:visited {
+    color: #5b8e00;
+    font-weight: bold;
+    text-decoration: none;
+}
+#countrylists ul li ul li.active a:hover, #countrylists ul li ul li.active a:focus, #countrylists ul li ul li.active a:active {
+    color: #5b8e00;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#countrylists ul li ul li.active p {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 6px;
+    margin-top: 3px;
+}
+#countrylists ul li ul li.active img.yes {
+    display: block;
+    float: left;
+}
+#countrylists ul li ul li.active img.no {
+    display: block;
+    float: right;
+}
+#countrylistsb {
+    display: none;
+    height: 14px;
+    position: relative;
+    top: -20px;
+    width: 605px;
+}
+#countryselfooter {
+    background-color: #7ab800;
+    height: 30px;
+    width: 960px;
+}
+#countryselfooter p {
+    color: #000;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 8px 15px 0 20px;
+    text-align: left;
+}
+#countryselfooter p .copyrightnotice {
+    margin-right: 10px;
+}
+#countryselfooter a {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#countryselfooter a:hover {
+    text-decoration: underline;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-table;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}

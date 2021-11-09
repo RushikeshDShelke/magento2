@@ -1,0 +1,70 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header $block
+ */
+$welcomeMessage = $block->getWelcome();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+?>
+<?php switch ($block->getShowPart()):
+
+    case 'welcome': ?>
+        <li class="sign-in-out" data-bind="scope: 'customer'">
+            <!-- ko if: customer().fullname  -->
+            <a href="<?= $block->getUrl('customer/account/logout') ?>"><!-- ko i18n: 'Sign Out' --><!-- /ko --></a>
+            <!-- /ko -->
+            <!-- ko ifnot: customer().fullname  -->
+            <a href="<?= $block->getUrl('customer/account/login') ?>"><!-- ko i18n: 'Sign In' --><!-- /ko --></a>
+            <!-- /ko -->
+        </li>
+        <li class="sm-line">|
+        </li>
+        <li class="greet welcome" data-bind="scope: 'customer'">
+            <?php /* <!-- ko if: customer().fullname  -->
+            <span data-bind="text: new String('<?= $block->escapeHtml(__('Welcome, %1!', '%1')) ?>').replace('%1', customer().firstname)">
+            </span>
+            <!-- /ko -->
+            <!-- ko ifnot: customer().fullname  -->
+            <span data-bind='html:"<?= $block->escapeHtmlAttr($welcomeMessage) ?>"'></span>
+            <?= $block->getBlockHtml('header.additional') ?>
+            <!-- /ko --> */ ?>
+
+            <?php //if($customerSession->isLoggedIn()) { ?>
+                <!-- ko if: customer().fullname  -->
+                    <a href="<?= $block->getUrl('customer/account') ?>"><!-- ko i18n: 'My Account' --><!-- /ko --></a>
+                <!-- /ko -->
+            <?php //} ?>
+
+        </li>
+        <li class="register" data-bind="scope: 'customer'">
+            <!-- ko ifnot: customer().fullname  -->
+            <a href="<?= $block->getUrl('customer/account/create') ?>"><!-- ko i18n: 'Register' --><!-- /ko --></a>
+            <!-- /ko -->
+        </li>
+        <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "customer": {
+                            "component": "Magento_Customer/js/view/customer"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+        <?php break; ?>
+
+    <?php case 'other': ?>
+        <?= $block->getChildHtml() ?>
+        <?php break; ?>
+
+    <?php endswitch; ?>

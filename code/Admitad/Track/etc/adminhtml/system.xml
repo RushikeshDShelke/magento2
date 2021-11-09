@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="admitad" translate="label" sortOrder="10">
+            <label>Admitad</label>
+        </tab>
+        <section id="admitadtrack" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Admitad Tracking</label>
+            <tab>admitad</tab>
+            <resource>Admitad_Track::admitadtrack_configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="client_id" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Client ID</label>
+                    <comment>Admitad client id.</comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <comment>Admitad client secret.</comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="param_name" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Param Name</label>
+                    <comment>Param name in url.</comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="currency_code" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Code</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

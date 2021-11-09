@@ -1,0 +1,107 @@
+<!--
+/** 
+ * @package     Ndsl_orderstatus
+ * @author      Ndsl Team <gautam@ndslindia.com>
+ * @copyright   Copyright (c) 2014 - Net Distribution Services Pvt Ltd. (http://ndslindia.com/)  
+ */
+-->
+<?php $blockId = $block->getBlockId() . '-';?>
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td><h3 class="icon-head head-tax-rate-importExport"><?php /* @escapeNotVerified */ echo __('Import Orderstatus Code') ?></h3></td>
+        </tr>
+    </table>
+</div>
+<div class="entry-edit">
+    <div class="box-left">
+        <form id="import_form" action="<?php echo $this->getUrl('*/*/import') ?>" method="post" enctype="multipart/form-data">
+            <?php echo $this->getBlockHtml('formkey')?>
+            <div class="entry-edit-head" style="width:925px;>
+                <h4 class="icon-head head-edit-form fieldset-legend"><?php /* @escapeNotVerified */ echo __('Import Order Status Code') ?></h4>
+            </div>
+
+            <fieldset>
+            <table class="form-list" cellspacing="0">
+                <colgroup class="label"/>
+                <colgroup class="value"/>
+                <tbody">
+                    <tr>
+                         <td><?php /* @escapeNotVerified */ echo __('Order Comment') ?></td>
+                        <td class="value">
+                            <input type="text" name="comments" class="input-file" value="" style="width:700px;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td><?php /* @escapeNotVerified */ echo __('Customer Notify') ?></td>
+                        <td class="value">
+                            <input type="checkbox" name="customernotify" value="1">
+                            <p class="nm">
+                                <small><?php /* @escapeNotVerified */ echo __('tick if need to notify customer'); ?></small>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td><?php /* @escapeNotVerified */ echo __('To Order Status') ?></td>
+                        <td class="value">
+                            <select id="status" name="orderstatus_code" class="required-entry required-entry select">
+                                <?php foreach ($this->getSataus() as $_code=>$_name): ?>
+                                    <option value="<?php echo $_code ?>"><?php echo $_name ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td><?php /* @escapeNotVerified */ echo __('Create Invoice') ?></td>
+                        <td class="value">
+                            <input type="checkbox" name="createinvoce" value="1">
+                            <p class="nm">
+                                <small><?php /* @escapeNotVerified */ echo __('cheacking this will conver order state to processing'); ?></small>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <label><?php /* @escapeNotVerified */ echo __('Import File') ?></label>
+                        </td>
+                        <td class="value">
+                            <input type="file" name="import_orderstatus_file" class="input-file required-entry"/>
+                            <p class="nm">
+                                <small><?php /* @escapeNotVerified */ echo __('Line format:'). ' "'./* @escapeNotVerified */  __('orderid').'"'; ?></small>
+                            </p>
+                        </td>
+                    </tr>
+					 <tr>
+                        <td>&nbsp;</td>
+						
+                        <td class="value">
+						  <button title="<?php echo __('Import') ?>" type="submit"
+                        class="scalable add"
+                        id="importordersatus">
+                    <span><?php echo __('Import') ?></span>
+                </button>
+						
+						
+                           
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            </fieldset>
+
+        </form>
+        <script type="text/javascript">
+            var importForm = new varienForm('import_form');
+
+            function displayLoadingMask()
+            {
+                var loaderArea = $$('#html-body .wrapper')[0]; // Blocks all page
+                Position.clone($(loaderArea), $('loading-mask'), {offsetLeft:-2});
+                toggleSelectsUnderBlock($('loading-mask'), false);
+                Element.show('loading-mask');
+            }
+        </script>
+    </div>
+    <div class="clear"></div>
+</div>

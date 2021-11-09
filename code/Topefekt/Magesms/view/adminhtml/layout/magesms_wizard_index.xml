@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Topefekt\Magesms\Block\Adminhtml\Wizard" name="magesms.wizard.index" template="Topefekt_Magesms::wizard.phtml">
+                <block class="Topefekt\Magesms\Block\Adminhtml\Wizard\CustomerList" name="magesms.wizard.customer._country" template="Topefekt_Magesms::wizard/_country.phtml" />
+                <block class="Topefekt\Magesms\Block\Adminhtml\Wizard\CustomerList" name="magesms.wizard.customer.list" template="Topefekt_Magesms::wizard/list.phtml" />
+                <block class="Topefekt\Magesms\Block\Adminhtml\Wizard\AdminList" name="magesms.wizard.admin._country" template="Topefekt_Magesms::wizard/_country.phtml" />
+                <block class="Topefekt\Magesms\Block\Adminhtml\Wizard\AdminList" name="magesms.wizard.admin.list" template="Topefekt_Magesms::wizard/list.phtml" />
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,236 @@
+<?php
+/**
+ * Solwin Infotech
+ * Solwin Contact Form Widget Extension
+ *
+ * @category   Solwin
+ * @package    Solwin_Contactwidget
+ * @copyright  Copyright © 2006-2016 Solwin (https://www.solwininfotech.com)
+ * @license    https://www.solwininfotech.com/magento-extension-license/
+ */
+$widgetEnable = $this->getConfigValue('contactwidget_section/general/enable');
+$captchaSitekey = $this->getConfigValue('contactwidget_section/recaptcha/recaptcha_sitekey');
+$captchaTheme = $this->getConfigValue('contactwidget_section/recaptcha/recaptcha_theme');
+$formActionUrl = $this->getFormActionUrl();
+$helper = $this->helper('Solwin\Contactwidget\Helper\Data');
+$currPageUrl = $helper->getCurrentUrls();
+?>
+<?php if($widgetEnable){?>
+    <form class="form contact" action="<?php echo $formActionUrl;?>" id="contact-form" method="post" enctype="multipart/form-data" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}'>
+        <fieldset class="fieldset" id="contact-form-heading">
+            <legend class="legend"><span><?php /* @escapeNotVerified */ echo $this->getData('cc_title') ?></span></legend>
+            <div class="field note no-label"><?php /* @escapeNotVerified */ echo $this->getData('cc_content') ?></div>
+        </fieldset>
+
+        <fieldset class="fieldset" id="fldset-contacttype">
+
+            <h4 class="h4-contact-us">Select contact type</h4>
+            <div class="options-list">
+                <div class="field">
+                    <input type="radio" value="general-enquiry" name="contact-type" data-validate="{'validate-one-required-by-name':true}">
+                    <label for="rdb-general-enquiry" class="label">General Enquiry </label>
+
+                    <input type="radio" value="order-related" style="margin-left:4rem;" name="contact-type" data-validate="{'validate-one-required-by-name':true}">
+                    <label for="rdb-order-related" class="label">Order Related </label>
+                </div>
+
+            </div>
+
+            <div class="field select-general-subject required" id="general-subject-container" style="display: none;">
+                <label for="select-general-subject" class="label">
+                    Select Subject
+                </label>
+                <div class="control">
+                    <select name="select-general-subject" id="select-general-subject" data-validate="{required:true}" >
+                        <option value=""></option>
+                        <option value="Information On Product">Information On Product</option>
+                        <option value="Nearest Retail Store">Nearest Retail Store</option>
+                        <option value="Bulk Order Enquiry">Bulk Order Enquiry</option>
+                        <option value="Dealer/Distributor Enquiry">Dealer/Distributor Enquiry</option>
+                        <option value="Brand Voucher Redemption Related">Brand Voucher Redemption Related</option>
+                        <option value="Online Coupon Code Related">Online Coupon Code Related</option>
+                        <option value="Shipping Timeline">Shipping Timeline</option>
+                        <option value="Others">Others</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div  class="field select-order-subject required" id="order-subject-container" style="display: none;">
+                <label for="select-order-subject" class="label">
+                    Select Subject
+                </label>
+                <div class="control">
+                    <select name="select-order-subject" id="select-order-subject" data-validate="{required:true}">
+                        <option value=""></option>
+                        <option value="Order Status">Order Status</option>
+                        <option value="Exchange Related">Exchange Related</option>
+                        <option value="Defective Product">Defective Product</option>
+                        <option value="Invoice Request">Invoice Request</option>
+                        <option value="Others">Others</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="field" style="display: none;"></div>
+
+
+        </fieldset>
+        <fieldset class="fieldset" id="fldset-additional" style="display: none;">
+            <h4 class="h4-contact-us">Additional Details</h4>
+            <div class="field name required">
+                <label class="label" for="name"><span><?php /* @escapeNotVerified */ echo __('Name') ?></span></label>
+                <div class="control">
+                    <input name="name" id="name" title="<?php /* @escapeNotVerified */ echo __('Name') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+                </div>
+            </div>
+            <div class="field email required">
+                <label class="label" for="email"><span><?php /* @escapeNotVerified */ echo __('Email') ?></span></label>
+                <div class="control">
+                    <input name="email" id="email" title="<?php /* @escapeNotVerified */ echo __('Email') ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <?php
+            if ($this->getData('cc_enable_phoneno')) {
+                ?>
+                <div class="field telephone required">
+                    <label class="label" for="telephone"><span><?php /* @escapeNotVerified */ echo __('Mobile Number') ?></span></label>
+                    <div class="control">
+                        <input name="telephone" id="telephone" title="<?php /* @escapeNotVerified */ echo __('Mobile Number') ?>" value="" class="input-text" type="text" data-validate="{required:true, 'validate-mobile-number':true}"/>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <div class="field couponcode" style="display: none;">
+                <label class="label" for="couponcode"><span><?php /* @escapeNotVerified */ echo __('Coupon Code') ?></span></label>
+                <div class="control">
+                    <input name="couponcode" id="couponcode" title="<?php /* @escapeNotVerified */ echo __('Coupon Code') ?>" class="input-text" type="text">
+                </div>
+            </div>
+            <div class="field location" style="display: none;">
+                <label class="label" for="location"><span><?php /* @escapeNotVerified */ echo __('Location') ?></span></label>
+                <div class="control">
+                    <input name="location" id="location" title="<?php /* @escapeNotVerified */ echo __('Location') ?>" class="input-text" type="text">
+                </div>
+            </div>
+            <div class="field pincode" style="display: none;">
+                <label class="label" for="pincode"><span><?php /* @escapeNotVerified */ echo __('Pincode') ?></span></label>
+                <div class="control">
+                    <input name="pincode" id="pincode" title="<?php /* @escapeNotVerified */ echo __('Pincode') ?>" class="input-text" type="text" data-validate="{required:true, 'validate-pincode':true}">
+                </div>
+            </div>
+
+            <div class="field order-number required" style="display: none;">
+                <label class="label" for="order-number"><span><?php /* @escapeNotVerified */ echo __('Order Number') ?></span></label>
+                <div class="control">
+                    <input name="order-number" id="order-number" title="<?php /* @escapeNotVerified */ echo __('Order Number') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+                </div>
+            </div>
+
+            <div id="imageFile-container" class="field imageFile-container" style="display: none;">
+                <label id="label_imageFile" for="imageFile">
+                    Upload Photographs in JPEG format(less than 2MB) </label>
+                <div class="input-box">
+                    <script  type="text/javascript">
+                        //<![CDATA[
+                        function checkFile1549(fieldObj, showAlert) {
+                            var error = "";
+                            var FileName = fieldObj.value;
+                            if (FileName.length == 0) return false;
+                            var FileExt = FileName.substr(FileName.lastIndexOf('.') + 1).toLowerCase();
+                            var FileSize = fieldObj.files[0].size;
+                            var FileSizeKB = (FileSize / 1024).toFixed(2);
+                            var allowedExtensions = ["jpg", "jpeg", "gif", "png"];
+                            var allowedSize = 2048;
+
+                            if (allowedExtensions.indexOf(FileExt) < 0 && allowedExtensions.length) {
+                                error += "Selected file has none of allowed extensions: jpg, jpeg, gif, png\n\n";
+                            }
+
+                            if (FileSizeKB > allowedSize) {
+                                error += "Selected file exceeds allowed size: 2048 kB";
+                            }
+
+                            if (error) {
+                                fieldObj.clear();
+                                if (showAlert)
+                                    alert(error);
+                                return false;
+                            }
+
+                            return true;
+                        }
+                        //]]>
+                    </script>
+                    <input type='file' name='imageFile' id='imageFile' class='input-file' onchange="checkFile1549(this,1)" />
+                    <div id="fileupload-progress-imageFile" class="file-progress"></div>
+                    <ul id="preview_imageFile" class="file-preview"></ul>
+
+                </div>
+            </div>
+
+            <div class="field product-name required" style="display: none;">
+                <label class="label" for="product-name"><span><?php /* @escapeNotVerified */ echo __('Product Name') ?></span></label>
+                <div class="control">
+                    <input name="product-name" id="product-name" title="<?php /* @escapeNotVerified */ echo __('Product Name') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+                </div>
+            </div>
+            <div class="field product-quantity required" style="display: none;">
+                <label class="label" for="product-quantity"><span><?php /* @escapeNotVerified */ echo __('Product Quantity') ?></span></label>
+                <div class="control">
+                    <input name="product-quantity" id="product-quantity" title="<?php /* @escapeNotVerified */ echo __('Product Quantity') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+                </div>
+            </div>
+            <div class="field comment required">
+                <label class="label" for="comment"><span><?php /* @escapeNotVerified */ echo __('Additional Details') ?></span></label>
+                <div class="control">
+                    <textarea name="comment" id="comment" title="<?php /* @escapeNotVerified */ echo __('Additional Details') ?>" class="input-text" cols="5" rows="3" data-validate="{required:true}"></textarea>
+                </div>
+            </div>
+
+            <?php
+            if ($this->getData('cc_enable_recaptcha')) {
+                ?>
+                <div class="field comment required">
+                    <label class="label" for="captcha"><span><?php /* @escapeNotVerified */ echo __('ReCaptcha') ?></span></label>
+                    <div class="control">
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
+                        <div class="g-recaptcha" data-sitekey="<?php echo $captchaSitekey;?>" data-theme="<?php echo $captchaTheme; ?>"></div>
+                    </div>
+                </div>
+            <?php } ?>
+
+        </fieldset>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <input type="hidden" name="currUrl" id="currUrl" value="<?php echo $currPageUrl; ?>" />
+                <input type="hidden" name="enablerecaptcha" id="currUrl" value="<?php echo $this->getData('cc_enable_recaptcha'); ?>" />
+                <button type="submit" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>" class="action submit primary">
+                    <span><?php /* @escapeNotVerified */ echo __('Submit') ?></span>
+                </button>
+            </div>
+        </div>
+    </form>
+<?php
+}
+?>
+
+
+<script type="text/javascript">
+    require([
+        'jquery', // jquery Library
+        'jquery/ui', // Jquery UI Library
+        'jquery/validate', // Jquery Validation Library
+        'mage/translate', // Magento text translate (Validation message translte as per language)
+        "Solwin_Contactwidget/js/contactus"
+    ], function($){
+
+    });
+</script>
+<style>
+    #chat-btn {display: none;}
+</style>
+<!-- Start of Zendesk Widget script task 16134579-->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=00f76b40-5d82-47ed-9928-810d26531381"> </script>
+<!-- End of Zendesk Widget script task 16134579--> 

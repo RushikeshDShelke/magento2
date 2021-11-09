@@ -1,0 +1,66 @@
+<?php
+    $_category_desc = $this->helper('Smartwave\Porto\Helper\Data')->getConfig('porto_settings/category/category_description');
+?>
+<?php if ($_category_desc == "main_column" && $_description = $block->getCurrentCategory()->getDescription()): ?>
+    <div class="category-description">
+        <?php echo $this->helper('Magento\Catalog\Helper\Output')->categoryAttribute($block->getCurrentCategory(), $_description, 'description') ?>
+    </div>
+<?php endif; ?>
+
+<style>
+	.morecontent span{
+		display: none;
+	}
+	.morelink {
+		display: inline;
+		color: red;
+		margin: 10px;
+	}
+    .category-description{padding: 2rem 1rem;}
+</style>
+
+<script type="text/javascript">
+
+require([
+   'jquery'
+], function ($) {
+	var showChar = 250;
+	var moretext = "more...";
+	var lesstext = "less";
+	
+	$('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+            var spaceLength = h.indexOf(' ');
+            var a = h.substr(0, spaceLength);
+            var b = h.substr(spaceLength, h.length - spaceLength);
+ 
+            var html = c + a + '<span class="morecontent"><span>' + b + '</span><i class="morelink">' + moretext + '</i></span>';
+            //console.log(html);
+ 
+            $(this).html(html);
+        }
+ 
+    });
+
+
+
+	$(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>

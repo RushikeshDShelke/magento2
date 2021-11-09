@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Topefekt_Magesms::magesms" title="SMS" module="Topefekt_Magesms" sortOrder="40" dependsOnModule="Topefekt_Magesms" resource="Topefekt_Magesms::magesms"/>
+        <add id="Topefekt_Magesms::magesms_sendsms" title="Send SMS" module="Topefekt_Magesms" sortOrder="10" parent="Topefekt_Magesms::magesms" action="magesms/sendsms" resource="Topefekt_Magesms::magesms_sendsms" />
+        <add id="Topefekt_Magesms::magesms_marketing" title="Marketing SMS" module="Topefekt_Magesms" sortOrder="20" parent="Topefekt_Magesms::magesms" action="magesms/marketing" resource="Topefekt_Magesms::magesms_marketing" />
+        <add id="Topefekt_Magesms::magesms_history" title="SMS History" module="Topefekt_Magesms" sortOrder="30" parent="Topefekt_Magesms::magesms" action="magesms/history" resource="Topefekt_Magesms::magesms_history" />
+        <add id="Topefekt_Magesms::magesms_statistics" title="Statistics" module="Topefekt_Magesms" sortOrder="40" parent="Topefekt_Magesms::magesms" action="magesms/statistics" resource="Topefekt_Magesms::magesms_statistics" />
+        <!--<add id="Topefekt_Magesms::magesms_answers" title="SMS Answers" module="Topefekt_Magesms" sortOrder="50" parent="Topefekt_Magesms::magesms" action="magesms/answers" resource="Topefekt_Magesms::magesms_answers" />-->
+        <add id="Topefekt_Magesms::magesms_purchasecredit" title="Purchase Credit" module="Topefekt_Magesms" sortOrder="60" parent="Topefekt_Magesms::magesms" action="magesms/purchasecredit" resource="Topefekt_Magesms::magesms_purchasecredit" />
+        <add id="Topefekt_Magesms::magesms_about" title="About" module="Topefekt_Magesms" sortOrder="70" parent="Topefekt_Magesms::magesms" action="magesms/index/about" resource="Topefekt_Magesms::about" />
+
+        <add id="Topefekt_Magesms::magesms_settings" title="Settings" module="Topefekt_Magesms" sortOrder="100" parent="Topefekt_Magesms::magesms" resource="Topefekt_Magesms::magesms_settings" />
+        <add id="Topefekt_Magesms::magesms_profile" title="Edit user account" module="Topefekt_Magesms" sortOrder="10" parent="Topefekt_Magesms::magesms_settings" action="magesms/profile" resource="Topefekt_Magesms::profile" />
+        <add id="Topefekt_Magesms::magesms_adminsms" title="Admin SMS" module="Topefekt_Magesms" sortOrder="20" parent="Topefekt_Magesms::magesms_settings" action="magesms/adminsms" resource="Topefekt_Magesms::magesms_adminsms" />
+        <add id="Topefekt_Magesms::magesms_customersms" title="Customer SMS" module="Topefekt_Magesms" sortOrder="30" parent="Topefekt_Magesms::magesms_settings" action="magesms/customersms" resource="Topefekt_Magesms::magesms_customersms" />
+        <!--<add id="Topefekt_Magesms::magesms_optout" title="SMS opt-out" module="Topefekt_Magesms" sortOrder="40" parent="Topefekt_Magesms::magesms_settings" action="magesms/optout" resource="Topefekt_Magesms::magesms_optout" />-->
+        <add id="Topefekt_Magesms::magesms_wizard" title="SMS Settings" module="Topefekt_Magesms" sortOrder="50" parent="Topefekt_Magesms::magesms_settings" action="magesms/wizard" resource="Topefekt_Magesms::magesms_wizard" />
+        <add id="Topefekt_Magesms::magesms_system_settings" title="System Settings" module="Topefekt_Magesms" sortOrder="60" parent="Topefekt_Magesms::magesms_settings" action="adminhtml/system_config/edit/section/magesms" resource="Magento_Config::config" />
+    </menu>
+</config>

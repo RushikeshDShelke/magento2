@@ -1,0 +1,29 @@
+<?php 
+$orderId = $block->escapeHtml($this->getOrderIncrementId()); // order id
+$orderAmount = $block->getOrderAmount(); // order amount
+$cookieName = $block->getCookies("utm_para"); // checking cookie
+$pixelParameters = $block->getConditionalPixelName(); // checking cookie parameters from backend
+$moduleStatus = $block->isEnabled(); // checking module status
+
+$convertQueryParaToComma = str_replace(str_split('\\/?=&%'), ',', $cookieName); // replace characters with comma
+$convertQryParaToArr = explode(",", $convertQueryParaToComma); // converting into array
+?>
+
+<?php if ($moduleStatus == 1): ?>
+
+<!-- new Pixel gcode-->
+	<iframe src="https://crazyb.go2pixel.org/tracking/conversion/?offer_id=1&orderAmount=<?= $orderAmount; ?>&orderID=<?= $orderId; ?>" height="0" width="0"></iframe>
+<!-- new Pixel gcode-->
+	<?php if (isset($cookieName) && in_array("cbm", $convertQryParaToArr)): ?>
+		<!-- Conditional Pixel -->
+		<iframe src="https://cbm.o18.click/p?mid=1540&t=f&auth_token=57690&oid=4884903&adv_sub4=<?= $orderId; ?>&sale=<?= $orderAmount; ?>" width="0px" height="0px" style="visibility: hidden;"></iframe>
+		<!-- Conditional Pixel -->
+	<?php endif ?>
+	
+	<?php if (isset($cookieName) && in_array("cdm", $convertQryParaToArr)): ?>
+		<!-- new Pixel -->
+		<iframe src="https://crazyb.go2pixel.org/tracking/conversion/?offer_id=1&orderAmount=<?= $orderAmount; ?>&orderID=<?= $orderId; ?>" height="0" width="0"></iframe>
+		<!-- new Pixel -->
+	<?php endif ?>
+
+<?php endif ?>

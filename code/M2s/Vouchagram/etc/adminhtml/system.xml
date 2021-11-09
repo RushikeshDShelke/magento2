@@ -1,0 +1,23 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Vouchagram" translate="label" sortOrder="10">
+            <label>Vouchagram</label>
+        </tab>
+        <section id="coupon" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>CouponCode</label>
+            <!-- Assign section to tab -->
+            <tab>Vouchagram</tab>
+            <resource>M2s_Vouchagram::config_vouchagram</resource>
+            <!-- create group for fields in section -->
+            <group id="general_settings" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+
+                <field id="status" translate="label comment" sortOrder="3" type="select" showInDefault="1">
+                    <label>Enable </label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                
+            </group>
+        </section>
+    </system>
+</config>

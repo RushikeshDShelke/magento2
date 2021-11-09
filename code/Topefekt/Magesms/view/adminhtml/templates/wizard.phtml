@@ -1,0 +1,18 @@
+<?php
+/**
+ * Mage SMS - SMS notification & SMS marketing
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the BSD 3-Clause License
+ * It is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @category    TOPefekt
+ * @package     TOPefekt_Magesms
+ * @copyright   Copyright (c) 2012-2017 TOPefekt s.r.o. (http://www.mage-sms.com)
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ */
+?><?php $user = $block->profile->user; $lang = $block->profile->lang; $currency = $block->profile->currency; ?><div style="float: right;"><form action="<?php echo $block->getUrl('*/*/pricelist_update') ?>" method="post"><?php echo $block->getBlockHtml('formkey') ?><button id="submit" name="submit" title="<?php echo $block->escapeHtml(__('Update pricelist')); ?>" type="submit" class="" role="button" aria-disabled="false"><span class="ui-button-text"><span><?php echo $block->escapeHtml(__('Update pricelist')); ?></span></span></button></form></div><p><?php echo __('Define SMS Sender Type for each country separately (Text sender ID, Own mobile number or System number). SMS price depends on the recipient country, selected SMS sender type and amount of payment. In countries with undefined SMS sender type will be used System number sender type.'); ?></p><div id="magesms"><div class="entry-edit"><div class="entry-edit-head"><h4 class="icon-head fieldset-legend head-account"><img src="<?php echo $block->getViewFileUrl('Topefekt_Magesms::images/AdminTools.gif'); ?>" alt="" /> <?php echo __('Customer SMS settings'); ?></h4></div><fieldset class="fieldset grid"><?php echo $block->getChildHtml('magesms.wizard.customer._country') ?><br /><?php echo $block->getChildHtml('magesms.wizard.customer.list'); ?></fieldset></div><div class="entry-edit"><div class="entry-edit-head"><h4 class="icon-head fieldset-legend head-account"><img src="<?php echo $block->getViewFileUrl('Topefekt_Magesms::images/AdminTools.gif'); ?>" alt="" /> <?php echo __('Admin SMS settings'); ?></h4></div><fieldset class="fieldset grid"><?php echo $block->getChildHtml('magesms.wizard.admin._country'); ?><br /><?php echo $block->getChildHtml('magesms.wizard.admin.list'); ?></fieldset></div></div><script type="text/javascript">//<![CDATA[
+function virtuals(cl) {require(['jquery',], function($) {$('.' + cl).toggleClass('hidden');});}
+//]]></script>

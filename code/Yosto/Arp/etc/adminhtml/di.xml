@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Yosto\Arp\Model\Rule">
+        <arguments>
+            <argument name="relatedCacheTypes" xsi:type="array">
+                <item name="blockCache" xsi:type="string">block_html</item>
+                <item name="fullPageCache" xsi:type="string">full_page</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Model\ResourceModel\Product">
+        <plugin name="yosto_apply_arp_rules_after_product_save"
+                type="Yosto\Arp\Plugin\Indexer\Product\Save\ApplyRules"/>
+    </type>
+    <type name="Magento\Catalog\Model\Category">
+        <plugin name="yosto_apply_after_products_assign"
+                type="Yosto\Arp\Plugin\Indexer\Category"/>
+    </type>
+    <type name="Magento\Store\Model\Website">
+        <plugin name="yosto_reindex_after_delete_website"
+                type="Yosto\Arp\Plugin\Indexer\Website"/>
+    </type>
+    <type name="Magento\Customer\Model\Group">
+        <plugin name="yosto_reindex_after_delete_customer_group"
+                type="Yosto\Arp\Plugin\Indexer\CustomerGroup"/>
+    </type>
+    <type name="Magento\ImportExport\Model\Import">
+        <plugin name="yosto_reindex_after_import"
+                type="Yosto\Arp\Plugin\Indexer\ImportExport"/>
+    </type>
+    <type name="Magento\Catalog\Model\ResourceModel\Eav\Attribute">
+        <plugin name="yosto_change_product_attribute"
+                type="Yosto\Arp\Plugin\Indexer\Product\Attribute"/>
+    </type>
+</config>

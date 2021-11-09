@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="yosto_arp_rule" class="Yosto\Arp\Model\Indexer\Rule\RuleProductIndexer" group="indexer">
+        <subscriptions>
+            <table name="yosto_arp_rule" entity_column="rule_id" />
+        </subscriptions>
+    </view>
+    <view id="yosto_arp_product_rule" class="Yosto\Arp\Model\Indexer\Product\ProductRuleIndexer" group="indexer">
+        <subscriptions>
+            <table name="catalog_product_entity" entity_column="entity_id" />
+            <table name="catalog_product_entity_datetime" entity_column="entity_id" />
+            <table name="catalog_product_entity_decimal" entity_column="entity_id" />
+            <table name="catalog_product_entity_gallery" entity_column="entity_id" />
+            <table name="catalog_product_entity_int" entity_column="entity_id" />
+            <table name="catalog_product_entity_media_gallery" entity_column="value_id" />
+            <table name="catalog_product_entity_media_gallery_value" entity_column="entity_id" />
+            <table name="catalog_product_entity_text" entity_column="entity_id" />
+            <table name="catalog_product_entity_tier_price" entity_column="entity_id" />
+            <table name="catalog_product_entity_varchar" entity_column="entity_id" />
+            <table name="catalog_category_product" entity_column="product_id" />
+        </subscriptions>
+    </view>
+</config>

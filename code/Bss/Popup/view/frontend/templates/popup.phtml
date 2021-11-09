@@ -1,0 +1,48 @@
+<?php
+/**
+ * BSS Commerce Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://bsscommerce.com/Bss-Commerce-License.txt
+ *
+ * @category   BSS
+ * @package    Bss_Popup
+ * @author     Extension Team
+ * @copyright  Copyright (c) 2017-2018 BSS Commerce Co. ( http://bsscommerce.com )
+ * @license    http://bsscommerce.com/Bss-Commerce-License.txt
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Block
+ *
+ * @var $block \Bss\Popup\Block\Popup
+ */
+$page = $block->getBlockType();
+$storeViewId = $block->getStoreId();
+$productId = $block->getProductId();
+$categoryId = $block->getCategoryId();
+$postUrl = $block->getBaseUrl().'popup/render/popup';
+$pageInformation = $block->getPageInformation();
+?>
+<div class="popup_container"></div>
+<script type="text/x-magento-init">
+    {
+    "*": 
+        {
+            "Bss_Popup/js/renderpopup": {
+                "page": <?php echo $page ?>,
+                "storeViewId": <?php echo $storeViewId ?>,
+                "productId": <?php echo $productId ?>,
+                "categoryId": <?php echo $categoryId ?>,
+                "updateUrl": "<?php echo $postUrl ?>",
+                "pageInformation": <?php echo $pageInformation ?>
+            }
+        }
+    }
+</script>

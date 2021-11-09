@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Catalog::catalog">
+                    <resource id="Yosto_Arp::arp" title="Automic Related Product" translate="title" sortOrder="20">
+                        <resource id="Yosto_Arp::rule" sortOrder="10" title="rule">
+                            <resource id="Yosto_Arp::rule_save" sortOrder="10" title="Save rule"/>
+                            <resource id="Yosto_Arp::rule_delete" sortOrder="20" title="Delete rule"/>
+                            <resource id="Yosto_Arp::rule_update" sortOrder="30" title="Update rule"/>
+                            <resource id="Yosto_Arp::rule_view" sortOrder="40" title="View rule"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

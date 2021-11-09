@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="ccavenue" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label><![CDATA[
+                <div style="padding-left:22px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0NWFmZjkwNi1hOGExLTBmNDctOTgzNC05YzE3YTNjMzdjMjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjMzNzRBNEU5NTEzMTFFNjlGQkVDMzEyODhENTcwMTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjMzNzRBNEQ5NTEzMTFFNjlGQkVDMzEyODhENTcwMTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTc0MzdkMzQtZDFmMy05NTRkLWJiNjEtNzBhZWY0NzJhZjllIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ1YWZmOTA2LWE4YTEtMGY0Ny05ODM0LTljMTdhM2MzN2MyOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkQYP/UAAAFDSURBVHjanJI9LwRRFIZnd4wlUW9ExYoChU6iJIIfQKJSLAmrEYVsTadQq7Zf0a7ER+0jOpVOSaLw0VmW8R555uZkQ+Mkz5w79z3v3Dv33FyaptF/osMe97PD+0p1cSne/6jtFBNise/ktpJnsoxxSxR/MRXR6tRGmfFL9Ioq4rwzLYgDNKv5DFu15RFsK5NiQMygTfNucS52vTERG2JObIp+sYRWEE9iT5yiha1ui1W+uC6uMBQ4sAp5Tez4FYfECFtaEYdiDM3G16ImpsSHX/GZbEJJvIgmvIpBtFCbGXPkNxGLHrQ84xgt1GbGB7JdoxbtiVyrWmihNjM2uDEJc/4epswl1DS8scYBWHQ5Q9o2lx1SMN5xAY45kG7+K2bcRKtSG9phcSGWxaMYd5r18kzcoEXtxsgJR2LUjb32E98CDABVLk2EVmSwcAAAAABJRU5ErkJggg==')
+ left 50% no-repeat;">CCAvenue</div> ]]>
+            </label>
+                <comment>
+                    <![CDATA[<a href="https://www.ccavenue.com" target="_blank">Click here to sign up for CCAvenue account</a>]]>
+                </comment>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="sandbox" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sandbox Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="merchant_id" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Merchant Id</label>
+                </field>
+                <field id="access_code" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Access Code</label>
+                </field>
+                <field id="api_key" translate="label" type="obscure" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Working Key</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>New Order Status</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                </field>
+                <field id="integration_technique" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Integration Technique</label>
+                    <source_model>Themecafe\CCAvenue\Model\Config\Source\Integrationtechniques</source_model>
+		</field>
+                
+                <field id="allowspecific" translate="label" type="allowspecific" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Applicable Countries</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                </field>
+                <field id="min_order_total" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Minimum Order Total</label>
+                </field>
+                <field id="max_order_total" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Maximum Order Total</label>
+                    <comment>Leave empty to disable limit</comment>
+                </field>
+                <field id="sort_order" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sort Order</label>
+                </field>
+                <field id="record_logs" translate="label" type="select" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Record Logs</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Record logs when trying to payment throungh CCAvenue payment method, ccavenue.log.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

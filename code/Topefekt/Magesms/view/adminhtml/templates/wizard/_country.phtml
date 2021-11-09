@@ -1,0 +1,16 @@
+<?php
+/**
+ * Mage SMS - SMS notification & SMS marketing
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the BSD 3-Clause License
+ * It is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @category    TOPefekt
+ * @package     TOPefekt_Magesms
+ * @copyright   Copyright (c) 2012-2017 TOPefekt s.r.o. (http://www.mage-sms.com)
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ */
+?><?php if (!$lang = $block->getRequest()->getParam('country')) $lang = $block->profile->lang; ?><form id="magesms_addcountryuser" action="<?php echo $block->getUrl('*/*/addCountry', ['type' => $block->list_type]) ?>" method="post"><?php echo $block->getBlockHtml('formkey') ?><div class="margin-form" style="text-align: center"><label for="country"><?php echo __('Select country: '); ?></label><select name="country" id="country" class="admin__control-select"><?php foreach( $block->getCountries() as $country ): ?><option value="<?php echo $country->getName(); ?>" <?php echo $lang == $country->getName() ? 'selected' : ''; ?>><?php echo $country->getName(); ?> (+<?php echo $country->getArea(); ?>)</option><?php endforeach; ?></select><button id="submit" name="submit" title="<?php echo $block->escapeHtml(__('ADD/CHANGE SELECTED COUNTRY')); ?>" type="submit" class="primary" role="button" aria-disabled="false"><span class="ui-button-text"><span><?php echo $block->escapeHtml(__('ADD/CHANGE SELECTED COUNTRY')); ?></span></span></button></div></form>

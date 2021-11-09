@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <head>
+        <css src="Topefekt_Magesms::css/menu.css"/>
+        <css src="Topefekt_Magesms::css/styles.css"/>
+        <link src="Topefekt_Magesms::js/functions.js"/>
+    </head>
+</page>

@@ -1,0 +1,18 @@
+<?php
+/**
+ * Mage SMS - SMS notification & SMS marketing
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the BSD 3-Clause License
+ * It is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @category    TOPefekt
+ * @package     TOPefekt_Magesms
+ * @copyright   Copyright (c) 2012-2017 TOPefekt s.r.o. (http://www.mage-sms.com)
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ */
+?><?php if (!$lang = $block->getRequest()->getParam('country')) $lang = $block->profile->lang; if (!$type = $block->getRequest()->getParam('type')) $type = $block->getRoutes()[0]->getType(); $id = $block->getRequest()->getParam('id'); ?><p><?php echo __('Define SMS Sender Type for each country separately (Text sender ID, Own mobile number or System number). SMS price depends on the recipient country, selected SMS sender type and amount of payment. In countries with undefined SMS sender type will be used System number sender type.'); ?></p><div id="magesms"><div class="entry-edit"><div class="entry-edit-head"><h4 class="icon-head fieldset-legend head-account"><img src="<?php echo $block->getViewFileUrl('Topefekt_Magesms::images/AdminTools.gif'); ?>" alt="" /><?php if ($type == 'admin'): ?><?php echo __('Admin SMS settings'); ?><?php else: ?><?php echo __('Customer SMS settings'); ?><?php endif; ?> -<?php echo $block->getCountryName(); ?></h4></div><fieldset class="fieldset grid"><?php echo $block->getChildHtml('magesms.wizard.'.$type.'._country'); ?><br /><form id="magesms_addroute" data-mage-init='{"validation": {"validationUrl": "<?php echo $block->getUrl('*/*/validate'); ?>"}}' action="<?php echo $block->getUrl('*/*/sender_save') ?>" method="post"><?php echo $block->getBlockHtml('formkey') ?><?php echo $block->getChildHtml('magesms.wizard.'.$type.'.list'); ?><input type="hidden" name="id" value="<?php echo $id; ?>" /><input type="hidden" name="country" value="<?php echo $lang; ?>" /><input type="hidden" name="area" value="<?php echo $block->getCountryArea(); ?>" /><input type="hidden" name="type" value="<?php echo $type; ?>" /><button id="submitLogin" title="<?php echo $block->escapeHtml(__('SAVE SMS SETTINGS')); ?>" class="primary" role="button" aria-disabled="false"><span class="ui-button-text"><span><?php echo $block->escapeHtml(__('SAVE SMS SETTINGS')); ?></span></span></button></form></fieldset></div></div><script type="text/javascript">//<![CDATA[
+function virtuals(cl) {require(['jquery',], function($) {$('.' + cl).toggleClass('hidden');});}
+//]]></script>

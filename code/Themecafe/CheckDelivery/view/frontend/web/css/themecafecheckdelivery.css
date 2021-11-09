@@ -1,0 +1,28 @@
+/* 
+    Created on : 10 Oct, 2016, 11:13:31 AM
+    Author     : chiragvprajapati
+    Company    : Trimantra Software Solution
+*/
+div.zipcode-wrapper{
+    display: inline-block;
+    position: relative;
+}
+input[type="text"].zipcode-text{
+    width:200px;
+}
+div#zipcode-error[generated] ,label#zipcode-error[generated] {
+    color: #e02b27;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+ul.cod-ul{
+    margin-bottom: 10px;
+}
+#zipcode-form{
+    margin-bottom: 25px;
+}
+ul .codlabel{
+    margin-left: -20px;
+}

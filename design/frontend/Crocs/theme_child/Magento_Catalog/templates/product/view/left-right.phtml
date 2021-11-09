@@ -1,0 +1,121 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Product view template
+ *
+ * @see \Magento\Catalog\Block\Product\View\Description
+ */
+?>
+<?php
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+?>
+
+<div class="product-left-right-block row">
+    <div class="col-sm-6">
+        <h4 class="product-name-heading"><?php echo $_product->getName(); ?></h4>
+        <div class="sku-code">Item : #<?php echo $_product->getSku(); ?></div>
+        <div class="description-block"><?php echo $_product->getDescription(); ?></div>
+    </div>
+    <div class="col-sm-6">
+        <div class="right-block"><?php echo $_product->getProductRightBlock(); ?></div>
+    </div>
+</div>
+
+<?php
+/* Disabled the ajax for scroll down products
+<script>
+    require(['jquery', 'jquery/ui', 'owl.carousel/owl.carousel.min'], function($) {
+        $(document).ready(function(){
+            var hasBeenTrigged = false;
+            var newUrl = '<?php echo $block->getBaseUrl()."invanos/product/view/id/".$_product->getId(); ?>';
+            var productId = '<?php echo $_product->getId(); ?>';
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 700 && !hasBeenTrigged){
+
+                    $.ajax({
+                        type: "GET",
+                        url: newUrl,
+                        data: {id:productId},
+                        beforeSend: function() {
+                            $("#loading-image-upsell-more").show();
+                            $("#loading-image-related").show();
+                        },
+                        success: function(response) {
+                            var recently = $(response).find('.recently-viewed');
+                            var upsellProduct = $(response).find('.block.upsell');
+                            var related = $(response).find('.block.related');
+
+                            $('.recently-view-ajax-load').html(recently);
+                            $('.product-upsell-ajax-more-collection').html(upsellProduct);
+                            $('.related-product-section').html(related);
+
+                            $(".upsell .owl-carousel").owlCarousel({
+                                responsiveClass:true,
+                                dots:false,
+                                loop:false,
+                                navText: ["‹","›"],
+                                responsive:{
+                                    0:{
+                                        items:1,
+                                        nav:true,
+                                        navText: ["‹","›"]
+                                    },
+                                    520:{
+                                        items:1,
+                                        nav:true
+                                    },
+                                    768:{
+                                        items:2,
+                                        nav:true,
+                                        navText: ["‹","›"],
+                                        loop:true
+                                    }
+                                }
+                            });
+                            $(".related .owl-carousel").owlCarousel({
+                                responsiveClass:true,
+                                dots:false,
+                                nav:false,
+                                navRewind:false,
+                                navText: ["‹","›"],
+                                responsive:{
+                                    0:{
+                                        items:1,
+                                        nav:true
+                                    },
+                                    400:{
+                                        items:1,
+                                        nav:true
+                                    },
+                                    600:{
+                                        items:3,
+                                        nav:true
+                                    },
+                                    1000:{
+                                        items:5,
+                                        nav:true
+                                    }
+                                }
+                            });
+                            $(".product-items.owl-carousel .owl-item .item").css("display", "block");
+                            $("#loading-image-upsell-more").hide();
+                            $("#loading-image-related").hide();
+                       }
+                    });
+                    
+                    hasBeenTrigged = true;
+                }
+            });
+        });
+    });
+</script>
+*/
+?>

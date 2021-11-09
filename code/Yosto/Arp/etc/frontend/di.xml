@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Magento\Catalog\Block\Product\ProductList\Related" type="Yosto\Arp\Block\Product\Related"/>
+    <preference for="Magento\Catalog\Block\Product\ProductList\Upsell" type="Yosto\Arp\Block\Product\Upsell"/>
+    <preference for="Magento\Checkout\Block\Cart\Crosssell" type="Yosto\Arp\Block\Cart\Crosssell"/>
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="yosto_arp_plugin"
+                type="Yosto\Arp\Plugin\Model\Product"/>
+    </type>
+</config>

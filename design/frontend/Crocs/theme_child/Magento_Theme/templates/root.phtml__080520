@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<!doctype html>
+<html <?= /* @escapeNotVerified */ 'data-locale="en_IN"' ?>>
+    <head <?= /* @escapeNotVerified */ $headAttributes ?>>
+    	<link rel="alternate" hreflang="en_IN" href="https://www.shopcrocs.in/"/>
+        <?= /* @escapeNotVerified */ $requireJs ?>
+        <?= /* @escapeNotVerified */ $headContent ?>
+        <?= /* @escapeNotVerified */ $headAdditional ?>
+    </head>
+    <body data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "<?= /* @escapeNotVerified */ $loaderIcon ?>"}}' <?= /* @escapeNotVerified */ $bodyAttributes ?>>
+        <?= /* @escapeNotVerified */ $layoutContent ?>
+    </body>
+</html>

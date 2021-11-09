@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Product view template
+ *
+ * @see \Magento\Catalog\Block\Product\View\Description
+ */
+?>
+<?php
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+$_productPromoText = $_product->getProductPromoText();
+$_productPromoDetails = $_product->getProductPromoDetails();
+?>
+
+<?php if(isset($_productPromoText)): ?>
+  <div class="promo-details-block">
+    <span class="promo-text"><?php echo $_productPromoText; ?> </span>
+    <?php if(isset($_productPromoDetails)): ?>
+        <a id="promo-details-link" href="#promo-details">Details »</a>
+        <div id="promo-details"><?php echo $_productPromoDetails; ?></div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+
+<script type="text/javascript">
+    require([
+        'jquery',
+        'fancybox/js/jquery.fancybox'
+    ], function ($) {
+        $(document).ready(function(){
+            $("#promo-details-link").fancybox({
+                'width': 440,
+                'overlayOpacity': 0.9,
+                'overlayOpacity':'#fff'
+            });
+        });
+    });
+</script>

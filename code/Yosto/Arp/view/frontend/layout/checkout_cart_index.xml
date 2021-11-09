@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Yosto_Arp::css/slick.css"/>
+        <css src="Yosto_Arp::css/slick-theme.css"/>
+        <css src="Yosto_Arp::css/slick-magento.css"/>
+    </head>
+
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="checkout.cart.crosssell">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">Yosto_Arp::product/list/items.phtml</argument>
+                </action>
+            </referenceBlock>
+        </referenceContainer>
+
+    </body>
+</page>

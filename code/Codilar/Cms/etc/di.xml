@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Magento\Cms\Model\Block" type="Codilar\Cms\Model\Magento\Cms\Block" />
+		
+    <preference for="Magento\Cms\Model\Page" type="Codilar\Cms\Model\Magento\Cms\Page" />
+		
+    <preference for="Magento\Cms\Model\ResourceModel\Block" type="Codilar\Cms\Model\Magento\Cms\ResourceModel\Block" />
+		
+    <preference for="Magento\Cms\Model\ResourceModel\Page" type="Codilar\Cms\Model\Magento\Cms\ResourceModel\Page" />
+		
+</config>

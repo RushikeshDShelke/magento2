@@ -1,0 +1,26 @@
+<?php
+$helper = $block->getHelper();
+$status = $helper->getConfig('check_delivery/general/active');
+$success = $helper->getConfig('check_delivery/general/success_message');
+$error = $helper->getConfig('check_delivery/general/failure_message');
+$zipdata = strtolower($helper->getConfig('check_delivery/general/zip_code'));
+?>
+<script type="text/javascript">
+    window.tssValuesConfig = {
+        'tssstatus': "<?php echo $status; ?>",
+        'tssSuccessMessage': "<?php echo $block->escapeHtml($success); ?>", 
+        'tssErrorMessage': "<?php echo $block->escapeHtml($error); ?>"
+        };
+    window.tssPin={
+        'tssPinArray': <?php echo json_encode($zipdata); ?>
+    };
+    require([
+        'jquery'
+    ], function ($) {
+        $(document).on('change', 'input[name=postcode]', function (e) {
+            e.preventDefault();
+            $('#custom-warning').hide();
+            $('#custom-success').hide();
+        });
+    });
+</script>

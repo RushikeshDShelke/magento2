@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <remove src="mage/calendar.css"/>
+        <remove src="Solwin_Contactwidget::css/file-upload.css"/>
+        <remove src="animate.css"/>
+        <remove src="Tigren_Ajaxsuite::css/media.css"/>
+        <remove src="Tigren_Ajaxcart::css/ajaxcart.css"/>
+        <remove src="Ves_Trackorder::css/style.css" />
+        <remove src="WeltPixel_Quickview::css/magnific-popup.css" />
+        <remove src="Amasty_Promo::css/ampromo.css"/>
+        <remove src="Amasty_Promo::css/slick.css"/>
+        <remove src="Amasty_Promo::css/slick-theme.css"/>
+        <remove src="Magebees_Mostviewed::css/mostviewed.css"/>
+    </head>
+    <body>
+        <referenceBlock name="store_language" remove="true"/>
+        <referenceBlock name="welpixel.quickview.initialize" remove="true"/>
+    </body>
+</page>

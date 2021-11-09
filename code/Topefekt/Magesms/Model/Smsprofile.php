@@ -1,0 +1,16 @@
+<?php
+/**
+ * Mage SMS - SMS notification & SMS marketing
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the BSD 3-Clause License
+ * It is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @category    TOPefekt
+ * @package     TOPefekt_Magesms
+ * @copyright   Copyright (c) 2012-2017 TOPefekt s.r.o. (http://www.mage-sms.com)
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ */
+namespace Topefekt\Magesms\Model; use Magento\Framework\App\CacheInterface; use Topefekt\Magesms\Helper\Data; class Smsprofile { public $user; public $admins; public $country; public $credit; public $lang; public $currency = 'EUR'; protected $_error; protected $_objectManager; protected $_cacheManager; protected $_helper; public function __construct(CacheInterface $i8a92bcf60182619da740bda79c9a35b88694c213, Data $i0d09b2a4f282150bf47b02f9f3d82586fe313844) { $this->_cacheManager = $i8a92bcf60182619da740bda79c9a35b88694c213; $this->_helper = $i0d09b2a4f282150bf47b02f9f3d82586fe313844; $this->_objectManager = \Magento\Framework\App\ObjectManager::getInstance(); $this->user = $this->loadUser(); $this->country = $this->_objectManager->create('Topefekt\Magesms\Model\Country')->getCollection(); $this->lang = $this->_helper->detectLang(); if ($this->user->getUser()) { if ($this->_cacheManager->load('credit')) { $this->credit = $this->_cacheManager->load('credit'); } else { $i55dd4e7042a1f9031b84f07f04c37165ce3d0720 = $this->_objectManager->create('Topefekt\Magesms\Model\Api') ->serverPost('action=info&username='.urlencode($this->user->getUser()).'&password='.urlencode($this->user->getPasswd())); if ($i55dd4e7042a1f9031b84f07f04c37165ce3d0720['errno'] != 1 || empty($i55dd4e7042a1f9031b84f07f04c37165ce3d0720['data'])) { $this->user = $this->_objectManager->create('Topefekt\Magesms\Model\Smsuser'); $this->_error = $i55dd4e7042a1f9031b84f07f04c37165ce3d0720['error']; } else { $this->credit = $i55dd4e7042a1f9031b84f07f04c37165ce3d0720['data'][0]; $this->_cacheManager->save($this->credit, 'credit', [], 10); } } if ($this->credit) $this->admins = $this->_objectManager->create('Topefekt\Magesms\Model\Admins'); foreach($this->country as $i037b855bc01175f2c77d5c3e19eda9a0003feff4) { if ($this->user->getCountry() == $i037b855bc01175f2c77d5c3e19eda9a0003feff4->getName()) { $this->currency = $i037b855bc01175f2c77d5c3e19eda9a0003feff4->getCurrency(); break; } } } } protected function loadUser() { $i77d22463fc16d92f418e384077adc971e57f8cd8 = $this->getObjectManager()->create('Topefekt\Magesms\Model\Smsuser')->getCollection(); $i77d22463fc16d92f418e384077adc971e57f8cd8->setOrder('id', 'DESC'); $i77d22463fc16d92f418e384077adc971e57f8cd8->getSelect()->limit(1); foreach ($i77d22463fc16d92f418e384077adc971e57f8cd8 as $if63180c174f143cf7a7c15db835b3c86c46375ad) { return $if63180c174f143cf7a7c15db835b3c86c46375ad; } return $this->getObjectManager()->create('Topefekt\Magesms\Model\Smsuser'); } public function getObjectManager() { return $this->_objectManager; } } 

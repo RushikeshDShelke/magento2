@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="POST" url="/V1/yosto-arp/rule">
+		<service class="Yosto\Arp\Api\RuleRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Yosto_Arp::rule_save"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/yosto-arp/search">
+		<service class="Yosto\Arp\Api\RuleRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="Yosto_Arp::rule_view"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/yosto-arp/:ruleId">
+		<service class="Yosto\Arp\Api\RuleRepositoryInterface" method="getById"/>
+		<resources>
+			<resource ref="Yosto_Arp::rule_view"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/yosto-arp/:ruleId">
+		<service class="Yosto\Arp\Api\RuleRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Yosto_Arp::rule_update"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/yosto-arp/:ruleId">
+		<service class="Yosto\Arp\Api\RuleRepositoryInterface" method="deleteById"/>
+		<resources>
+			<resource ref="Yosto_Arp::rule_delete"/>
+		</resources>
+	</route>
+</routes>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../vendor/magento/framework/Module/etc/module.xsd">
+    <head>
+        <!--<remove src="jquery.js" />-->
+        <!--<remove src="bootstrap/js/bootstrap.min.js" />-->
+        <css src="css/custom_style.css" />
+        <css src="css/proxima.css" />
+        <!-- literidepage -->
+        <css src="css/literide.css" />
+        <css src="css/all_crocs.css" />
+        <!-- revivapage -->
+        <css src="css/reviva.css" />
+    </head>
+</page>

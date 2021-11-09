@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_register_success">
+        <observer name="persistent" instance="Topefekt\Magesms\Observer\CustomerRegisterSuccessObserver" />
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="persistent" instance="Topefekt\Magesms\Observer\NewOrderObserver" />
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="persistent" instance="Topefekt\Magesms\Observer\UpdateOrderStatusObserver" />
+    </event>
+</config>

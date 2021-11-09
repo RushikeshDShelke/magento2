@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_place_after">
+        <observer name="admitad_track_order" instance="Admitad\Track\Observer\HandleAdmitadOrder" />
+    </event>
+    <event name="admin_system_config_changed_section_admitadtrack">
+        <observer name="custom_admin_system_config_changed_section_admitadtrack" instance="Admitad\Track\Observer\ConfigObserver"/>
+    </event>
+</config>

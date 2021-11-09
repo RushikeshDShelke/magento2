@@ -1,0 +1,80 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+// @codingStandardsIgnoreFile
+//"swatchRenderer": {
+?>
+
+<?php
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance();
+
+$registry = $objectManager->get('\Magento\Framework\Registry');
+
+$_product = $registry->registry('current_product');
+
+$_children = $_product->getTypeInstance()->getUsedProducts($_product);
+foreach ($_children as $child){
+    $sizeArray[] = $child->getResource()->getAttribute('size')->getFrontend()->getValue($child);
+}
+// print_r($sizeArray);
+
+// exit();
+
+?>
+<?php /** @var $block \Magento\Swatches\Block\Product\Renderer\Configurable */ ?>
+<div class="swatch-opt" data-role="swatch-options"></div>
+
+<script type="text/x-magento-init">
+    {
+        "[data-role=swatch-options]": {
+            "Magento_Swatches/js/swatch-renderer": {
+                "jsonConfig": <?= /* @escapeNotVerified */ $swatchOptions = $block->getJsonConfig() ?>,
+                "jsonSwatchConfig": <?php /* @escapeNotVerified */
+                    echo $swatchOptions = $block->getJsonSwatchConfig(); ?>,
+                "mediaCallback": "<?= /* @escapeNotVerified */ $block->getMediaCallback() ?>",
+                "gallerySwitchStrategy": "<?php /* @escapeNotVerified */ echo $block->getVar('gallery_switch_strategy',
+                    'Magento_ConfigurableProduct') ?: 'replace'; ?>"
+            }
+        }
+    }
+</script>
+
+<?php
+
+$_productSizeChart =  $_product->getResource()->getAttribute('var_size_chart')->getFrontend()->getValue($_product);
+$_productSizeDisclaimer = $_product->getResource()->getAttribute('size_disclaimer')->getFrontend()->getValue($_product);
+
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+//$_productSizeChart = $_product->getSizeChart();
+
+
+/** @var \Magento\Framework\App\ObjectManager $om */
+$om = \Magento\Framework\App\ObjectManager::getInstance();
+/** @var \Magento\Cms\Model\Block $block */
+$block = $om->create('Magento\Cms\Model\Block');
+$_productSizeChartData = $block->load($_productSizeChart, 'identifier')->getContent();
+
+?>
+<?php if(isset($_productSizeDisclaimer)): ?>
+    <div id="size-disclaimer-content"><p class="size-chart-data"><?php echo $_productSizeDisclaimer; ?> Did not find your size. <a href="https://forms.gle/vDmpdcpdwWCNGqkE6" target="_blank">Click here</a></p></div>
+<?php endif; ?>
+
+<?php if(isset($_productSizeChart)): ?>
+    <a id="size-chart-link" href="#size-chart-content">View size chart</a>
+    <div id="size-chart-content"><?php echo $_productSizeChartData; ?></div>
+<?php endif; ?>
+
+<script type="text/javascript">
+    require([
+        'jquery',
+        'fancybox/js/jquery.fancybox'
+    ], function ($) {
+        $(document).ready(function(){
+            $('#size-chart-link').fancybox({
+                'wrapCSS' : 'size-chart-wrapper'
+            });
+        });
+    });
+</script>

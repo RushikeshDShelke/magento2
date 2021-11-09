@@ -1,0 +1,36 @@
+<?php
+/*
+ * Turiknox_Webgains
+
+ * @category   Turiknox
+ * @package    Turiknox_Webgains
+ * @copyright  Copyright (c) 2017 Turiknox
+ * @license    https://github.com/Turiknox/magento2-webgains-tracking/blob/master/LICENSE.md
+ * @version    1.0.0
+ */
+?>
+<?php
+$orderReference = $block->escapeHtml($this->getOrderIncrementId());
+$ordershippinglesscharge = $block->getOrderAmount();
+?>
+
+<!-- Google Code for Beta Conversions Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 959587424;
+var google_conversion_label = "-aHaCJi0jYQBEODIyMkD";
+var google_conversion_value = <?php echo $ordershippinglesscharge; ?>;
+var google_conversion_currency = "INR";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/959587424/?value=<?php echo $ordershippinglesscharge; ?>&amp;currency_code=INR&amp;label=-aHaCJi0jYQBEODIyMkD&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!--Conversion Pixel for Crocs India CPS starts -->
+<iframe src="https://crazyb.go2pixel.org/tracking/conversion/?offer_id=1&orderAmount=<?php echo $ordershippinglesscharge; ?>&orderID=<?php echo $orderReference; ?>" height="0" width="0"></iframe>
+<!--Conversion Pixel for Crocs India CPS ends -->

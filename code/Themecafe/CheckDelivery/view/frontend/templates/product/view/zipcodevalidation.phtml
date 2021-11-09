@@ -1,0 +1,137 @@
+<?php
+$helper = $block->getHelper();
+$scopeConfig = $block->getScopeConfig();
+$product = $block->getRegistry()->registry('current_product');
+$customerSession = $block->getCustomerSession();
+$scopeWebsite = \Magento\Store\Model\ScopeInterface::SCOPE_WEBSITE;
+
+$displayProduct = $helper->getConfig('check_delivery/general/display_on_product');
+$productLevel = $helper->getConfig('check_delivery/general/product_level/product_level_active');
+
+$CODPaymentstatus = $scopeConfig->getValue('payment/cashondelivery/active', $scopeWebsite);
+
+$CODstatus = $helper->getConfig('check_delivery/cod_restriction/active');
+$CODzipcode = $helper->getConfig('check_delivery/cod_restriction/zip_code');
+$CODsuccess = $helper->getConfig('check_delivery/cod_restriction/success_message');
+$CODerror = $helper->getConfig('check_delivery/cod_restriction/failure_message');
+
+$productIds = $helper->getConfig('check_delivery/general/product_level/product_ids');
+
+$productidsData = array_map('trim', explode(',', $productIds));
+$CODzipcodeData = array_map('trim', explode(',', $CODzipcode));
+
+$pinData = $helper->getConfig('check_delivery/general/zip_code');
+$pinsData = array_map('trim', explode(',', $pinData));
+$pinDatas = array_map('strtolower', $pinsData);
+
+if ($displayProduct && $product->getTypeID() != "downloadable" && $product->getTypeID() != "virtual") :    
+    $zipcodedata = "";
+    $style = "";
+    $zip = "";
+    $productzipid = "";
+    $zipcode = ($customerSession->getTssZipCode()) ?
+            strtolower($customerSession->getTssZipCode()):
+            $block->getDefaultShippingZipcode();
+    if ($zipcode) :
+        $style = "";
+        $zip = "";
+        $productzipid = "";
+        $CODmessage = "";
+        if (trim($pinData) == "" || in_array($zipcode, $pinDatas)) :
+             $style = "style=display:none;";
+             $zip = $zipcode;
+        endif;
+		if ($CODstatus && $CODPaymentstatus) :
+		    if (in_array($zipcode, $CODzipcodeData) || trim($CODzipcode) == "" ) :
+		        $CODmessage = $CODsuccess;
+		    else :
+		        $CODmessage = $CODerror;
+		    endif;
+		endif;
+    endif;
+    $blockLabel = $helper->getConfig('check_delivery/general/block_title');
+    $btn_chk = $helper->getConfig('check_delivery/general/btn_chk');
+    $btn_change = $helper->getConfig('check_delivery/general/btn_change');
+    $changemessage = $helper->getConfig('check_delivery/general/change_message');
+    $placeholder = $helper->getConfig('check_delivery/general/txt_placeholder');?>
+    <form id="zipcode-form" name="zipcode-form" novalidate="novalidate">
+        <div class="fieldset">
+            <div class="field zipcode-wrapper">
+                <label class="label" for="zipcode"><span><?php echo $block->escapeHtml($blockLabel); ?></span></label>
+                <div class="control">
+                    <input name="zipcode" 
+                           required 
+                           type="text" 
+                           id="zipcode" 
+                           <?php echo $style; ?> 
+                           class="input-text zipcode-text" 
+                           placeholder="<?php echo $block->escapeHtml($placeholder); ?>" 
+                           data-validate="{'required-entry':true}" 
+                        />
+                    <div for="zipcode" generated="true" class="mage-error"  id="zipcode-error"></div>
+                    <button type="button" name="zip-check" title="Check ZipCode" <?php echo $block->escapeHtml($style); ?> id="zip-check" >
+                        <span><?php echo $block->escapeHtml($btn_chk); ?></span>
+                    </button>
+                    <?php if ($zip != "") : ?>
+                        <div class="Ziplabel">
+                            <label><?php echo $block->escapeHtml(str_replace("##zipcode##", $zip, $changemessage)); ?></label>
+                            <a href="javascript:void(0)" id="zip-change" name="zip-check" ><?php echo $block->escapeHtml($btn_change); ?></a>
+                            <?php if ($CODmessage) : ?>
+                                <ul class="cod-ul">
+                                    <li class="codlabel"><?php echo $block->escapeHtml($CODmessage); ?></li>
+                                </ul>
+                            <?php endif; ?> 
+                        </div>
+                    <?php endif; ?> 
+                    <div id="delivery-message"></div>
+                    <div id="COD-message"></div>
+                    <input type="hidden"
+                           id="product_id"
+                           name="product_id"
+                           value="<?php echo $block->escapeHtml($product->getId()); ?>" 
+                        />
+                </div>
+            </div>
+        </div>
+    </form>
+<script>
+        require([
+            'jquery',
+            'prototype',
+            'mage/mage',
+            'mage/backend/validation',
+            'jquery/validate'
+        ], function (jQuery) {
+            jQuery('#zipcode-form').on('keypress', function (e) {
+                var keyCode = e.keyCode;
+                if (keyCode === 13) {
+                    e.preventDefault();
+                    return false;/* disable enter key*/
+                }
+            });
+            jQuery('document').ready(function () {
+                jQuery('#zip-change ').click(function () {
+                    jQuery('.Ziplabel').hide();
+                    jQuery('#zip-check').show();
+                    jQuery('#zipcode').show();
+                    jQuery('#zip-change').hide();
+                });
+                jQuery('#zip-check').click(function () {
+                    var zipcodeValue = jQuery('#zipcode').val();
+                    var productidValue = jQuery('#product_id').val();
+                    var formKey = jQuery('input[name=form_key]').val();
+                    new Ajax.Request("<?php echo $block->escapeHtml($block->getUrl('themecafedelievry/zipcode/zipcode')); ?>", {
+                        method: "post",
+                        parameters: {zipcode: zipcodeValue, product_id: productidValue, form_key: formKey},
+                        onSuccess: function (transport) {
+                            var json = transport.responseText.evalJSON();
+                            $('delivery-message').update(json.message);
+                            $('COD-message').update(json.CODmessage);
+                            $('zipcode-error').update(json.requierdmessage);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+<?php endif; ?>

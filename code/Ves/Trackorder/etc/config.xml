@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Venustheme
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Venustheme.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.venustheme.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Venustheme
+ * @package    Ves_Trackorder
+ * @copyright  Copyright (c) 2014 Venustheme (http://www.venustheme.com/)
+ * @license    http://www.venustheme.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<trackorder>
+            <trackorder_general>
+                <enabled>1</enabled>
+                <route>trackorder</route>
+                <toplinks>1</toplinks>
+                <track_type>default</track_type>
+                <topmenu>1</topmenu>
+                <sendtrack_link>1</sendtrack_link>
+                <show_widget>1</show_widget>
+                <custom_message>Order Not Found. Please try again later</custom_message>
+                <use_longcode>0</use_longcode>
+                <secret_key>LOF</secret_key>
+                <chunks>1</chunks>
+                <letters>9</letters>
+                <separate_text>-</separate_text>
+            </trackorder_general>
+        </trackorder>
+    </default>
+</config>

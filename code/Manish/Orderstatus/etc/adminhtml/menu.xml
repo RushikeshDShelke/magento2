@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Manish_Orderstatus::parent" title="Orderstatus" module="Manish_Orderstatus" sortOrder="100" resource="Manish_Orderstatus::parent"/>
+        <add id="Manish_Orderstatus::index" title="Orderstatus Import" module="Manish_Orderstatus" sortOrder="10" action="orderstatus/index" resource="Manish_Orderstatus::index" parent="Manish_Orderstatus::parent"/>
+		
+    </menu>
+</config>

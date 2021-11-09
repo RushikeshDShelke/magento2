@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+	<default>
+		<default>
+			<optout>
+				<sku>magesms23239512311</sku>
+			</optout>
+			<supported>
+				<versions>2.0.0 - 2.2.x</versions>
+			</supported>
+			<!--<referer>fdsklfsdjklfsa</referer>-->
+		</default>
+		<magesms>
+			<template>
+				<language>en</language>
+			</template>
+			<magesms>
+				<enable>1</enable>
+			</magesms>
+		</magesms>
+	</default>
+</config>

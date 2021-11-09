@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Product view template
+ *
+ * @see \Magento\Catalog\Block\Product\View\Description
+ */
+?>
+<?php
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+$_productSizeChart = $_product->getSizeChart();
+?>
+<?php if(isset($_productSizeChart)): ?>
+    <a id="size-chart-link" href="#size-chart-content">View size chart</a>
+    <div id="size-chart-content"><?php echo $_productSizeChart; ?></div>
+<?php endif; ?>
+
+<script type="text/javascript">
+    require([
+        'jquery'
+    ], function ($) {
+        $(document).ready(function(){
+            $('#size-chart-link').fancybox();
+        });
+    });
+</script>

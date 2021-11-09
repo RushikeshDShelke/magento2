@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Themecafe_CheckDelivery::css/themecafecheckdelivery.css"/>
+    </head>
+    <body>
+        <referenceContainer name="product.info.main">
+            <block before="product.info" class="Themecafe\CheckDelivery\Block\CheckDelivery" name="tss.zipcodevalidation" template="Themecafe_CheckDelivery::product/view/zipcodevalidation.phtml" ifconfig="check_delivery/general/active" />
+        </referenceContainer>
+    </body>
+</page>

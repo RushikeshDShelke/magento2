@@ -1,0 +1,31 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Wishlist\Block\Customer\Wishlist\Item\Column\Info $block */
+
+/** @var \Magento\Wishlist\Model\Item $item */
+$item = $block->getItem();
+$product = $item->getProduct();
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+?>
+
+<?php
+
+$product_name = $_helper->productAttribute($product, $product->getName(), 'name');
+
+if (strlen($product_name) > 39)
+    $product_name = substr($product_name, 0, 36) . '...';
+
+?>
+
+
+<strong class="product-item-name">
+    <a href="<?= $block->escapeUrl($block->getProductUrl($item)) ?>" title="<?= $block->escapeHtmlAttr($product->getName()) ?>" class="product-item-link">
+        <?= $block->escapeHtml($product_name) ?>
+    </a>
+</strong>

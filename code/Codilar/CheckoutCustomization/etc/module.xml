@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Codilar Software
+ *
+ * @category Marketplace
+ * @package  Codilar_CheckoutCustomization
+ * @author   Codilar
+ * @license  https://store.Codilar.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Codilar_CheckoutCustomization" setup_version="2.0.0">
+        <sequence>
+            <module name="Magento_Checkout" />
+        </sequence>
+    </module>
+</config>

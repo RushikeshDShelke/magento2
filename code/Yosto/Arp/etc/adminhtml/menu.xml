@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 x-mage2(Yosto). All rights reserved.
+ * See README.md for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Yosto_Arp::arp"
+             title="Automatic Related Products"
+             translate="title" module="Yosto_Arp"
+             parent="Magento_Catalog::catalog"
+             sortOrder="20"
+             resource="Yosto_Arp::arp"/>
+        <add id="Yosto_Arp::rule"
+             title="Rules"
+             translate="title" sortOrder="10"
+             module="Yosto_Arp"
+             parent="Yosto_Arp::arp"
+             action="yosto_arp/rule/index/"
+             dependsOnModule="Magento_Catalog"
+             resource="Yosto_Arp::rule"/>
+        <add id="Yosto_Arp::rule_save"
+             title="Add Rule"
+             translate="title" sortOrder="20"
+             module="Yosto_Arp"
+             parent="Yosto_Arp::arp"
+             action="yosto_arp/rule/new/"
+             dependsOnModule="Magento_Catalog"
+             resource="Yosto_Arp::rule_save"/>
+    </menu>
+</config>

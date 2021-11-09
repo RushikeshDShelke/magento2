@@ -1,0 +1,143 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php 
+$required = '';
+if ($block->hasRequiredOptions()) {
+    $required = ' data-hasrequired="' . __('* Required Fields') . '"';
+}
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct(); 
+$gender = $_product->getGender();
+// print_r($gender);
+// exit();
+
+if($gender==84){
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$model = $objectManager->get('Magento\Variable\Model\Variable')->loadByCode('size');
+$html_value = $model->getHtmlValue();
+$plain_value = $model->getPlainValue();
+$_children = $_product->getTypeInstance()->getUsedProducts($_product);
+foreach($_children as $index => $child){
+    $original_sizes[$child->getData('size')] =$child->getResource()->getAttribute('size')->getFrontend()->getValue($child);
+}
+$segments=preg_split("/\|/", $plain_value);
+foreach($segments as $index => $value){
+    $segments2[]=preg_split("/\ /", $value);
+}
+?>
+<div class = "mens-section">
+    <div class="first div">
+        <span class = "swatch-attribute-label">Men-Size (India/UK)</span>
+        <span class="swatch-attribute-selected-option"></span>
+    </div>
+    <div class = "next div">
+    
+    <?php //added by nilesh ?>
+    <?php asort($original_sizes); ?>
+    <?php //ended by nilesh ?>
+
+    <?php foreach($original_sizes as $index => $value){
+    foreach($segments2 as $inside=>$value2){
+        if($value == $value2[0]){
+
+            ?>
+        <div class="swatch-option text custom" option-id="<?= $index; ?>"><?= $value2[0]; ?></div>
+
+        <?php }
+    }
+}?>
+        <!-- <div class="swatch-option text custom"  option-tooltip-value="2">2</div>
+        <div class="swatch-option text custom"  option-tooltip-value="3">3</div>
+        <div class="swatch-option text custom"  option-tooltip-value="4">4</div> -->
+    </div>
+</div>
+<div class = "womens-section" style = "clear : both">
+    <div class="first div">
+        <span  class = "swatch-attribute-label">Women-Size (India/UK)</span>
+        <span class="swatch-attribute-selected-option"></span>
+    </div>
+    <div class="next div">
+<?php
+    asort($original_sizes);
+    foreach($original_sizes as $index => $value){
+        foreach($segments2 as $inside=>$value2){
+            if($value == $value2[0]){
+                if(isset($value) && $value2[2] !== ''){
+
+            ?>
+        <div class="swatch-option text custom" option-id="<?= $index; ?>"><?= $value2[2]; ?></div>
+
+        <?php   }
+            }
+    }
+}?>
+        <!-- <div class="swatch-option text custom"  option-tooltip-value="2">2</div>
+        <div class="swatch-option text custom"  option-tooltip-value="3">3</div>
+        <div class="swatch-option text custom"  option-tooltip-value="4">4</div> -->
+    </div>
+</div>
+
+
+<div class="product-options-wrapper" id="product-options-wrapper"<?= /* @escapeNotVerified */ $required ?>>
+    <div class="fieldset" tabindex="0">
+        <?= $block->getChildHtml('', true) ?>
+    </div>
+</div>
+<style>
+.swatch-option.text.custom{
+    float:unset ; 
+    display : inline-block;
+}
+.next.div{
+    margin-top : 10px;
+}
+.womens-section{
+    border-top: 1px solid #ccc;
+}
+.swatch-opt{
+    display : none;
+}
+.custom-selected{
+    border: solid 2px #2a7ab0 !important;
+}
+.mens-section , .womens-section , .first.div {
+    margin-top : 10px;
+}
+</style>
+<script>
+require(['jquery'], function($){
+  $(document).ready( function() {
+    $(".swatch-option.text.custom").click(function (){
+       if($(this).hasClass("custom-selected")){
+            $(this).removeClass("custom-selected");
+            $(".swatch-input.super-attribute-select").val("");
+            $("body").find(".swatch-attribute-selected-option").html("");
+        }else{
+            $(".swatch-option.text.custom").removeClass("custom-selected");
+            $(this).addClass("custom-selected");
+            $(".swatch-input.super-attribute-select").val($(this).attr("option-id"));
+            $("body").find(".swatch-attribute-selected-option").html("");
+            $(this).parent().parent().find(".swatch-attribute-selected-option").html($(this).html());
+        }
+    });
+  });
+});
+</script>
+<?php } else{?>
+
+<?php
+$required = '';
+if ($block->hasRequiredOptions()) {
+    $required = ' data-hasrequired="' . __('* Required Fields') . '"';
+}
+?>
+<div class="product-options-wrapper" id="product-options-wrapper"<?= /* @escapeNotVerified */ $required ?>>
+    <div class="fieldset" tabindex="0">
+        <?= $block->getChildHtml('', true) ?>
+    </div>
+</div>
+<?php } ?> 

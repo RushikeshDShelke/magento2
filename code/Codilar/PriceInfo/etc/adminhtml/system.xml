@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="inc_taxes" translate="label" sortOrder="1000">
+            <label>Inclusive of Taxes</label>
+        </tab>
+        <section id="price_tax" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Inclusive of Taxes</label>
+            <tab>inc_taxes</tab>
+            <resource>Codilar_PriceInfo::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="tax_price_label" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+		            <label>Inclusive of Taxes:</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

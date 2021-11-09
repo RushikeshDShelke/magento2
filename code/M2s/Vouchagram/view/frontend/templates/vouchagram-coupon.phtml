@@ -1,0 +1,54 @@
+<?php
+$coupons = $block->getCouponsFromSession();
+// echo $this->scopeConfig->getValue(
+//             'coupon/general_settings/status',
+//             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
+//         );
+if($block->getIsEnabled()){
+?>
+<div class="vouchagram-design cart-discount">
+    <div class="block discount">
+        <div class="title">
+            <strong id="block-discount-heading" role="heading" aria-level="2">GyFTR Voucher</strong>
+        </div>
+
+
+        <form id="vouchagram-coupon-form" action="<?php /* @escapeNotVerified */ echo $block->getUrl('vouchagram/cart/applycoupon') ?>" data-mage-init='{"validation":{}}' method="post">
+        
+            <div class="fieldset coupon">
+                <?php if($coupons['vouchagram']['coupon_code']) {?>
+                    <input type="hidden" name="remove" id="remove-coupon" value="1">
+                    <input type="hidden" class="input-text" id="vouchagram_code" name="coupon_code" value="<?php echo $coupons['vouchagram']['coupon_code']; ?>" placeholder="Enter GyFTR Voucher">
+                <?php } ?>
+                <div class="field">
+                    <label for="coupon_code" class="label"><span>Enter GyFTR Voucher</span></label>
+                    <div class="control">
+                        <input type="text" class="input-text" id="vouchagram_code" name="coupon_code" value="<?php echo $coupons['vouchagram']['coupon_code'];  ?>" <?php if( $coupons['vouchagram']['coupon_code']){echo "disabled";}?> placeholder="Enter GyFTR Voucher">
+                    </div>
+                </div>
+                <div class="actions-toolbar">
+                    <?php if(!$coupons['vouchagram']['coupon_code']) {?>
+                    <div class="primary">
+                        <button class="action primary" type="submit" value="Apply Coupon">
+                            <span>Redeem Voucher</span>
+                        </button>
+
+                    </div>
+
+                <?php }else{ ?>
+                     <div class="primary">
+                        <button class="action primary" type="submit" value="Remove Voucher">
+                            <span>Remove Voucher</span>
+                        </button>
+                    </div>
+                    <?php } ?>
+                </div>
+                <div style="clear: both;display: table-row;">Multiple vouchers can be redeemed comma (,) separated.</div>
+                <div style="clear: both;display: table-row;color:red;font-weight: bold;">Disclaimer : If the Voucher value is more than the bill value, remaining amount will be forfeited </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<?php } ?>

@@ -1,0 +1,44 @@
+<?php
+/**
+ * @copyright Copyright (c) 2016 www.tigren.com
+ */
+?>
+<?php
+/* @var \Magento\Catalog\Model\Product $_product */
+$_product = $block->getProduct();
+?>
+<div class="mb-login-popup-title center">
+    <strong><?php echo __('Added To Cart'); ?></strong>
+</div>
+<div class="mb-ajaxsuite-popup-border ajaxcart-success-box" id="sm-error">
+    <div class="error-content">
+        
+        <p class="error-message">Remove product to add gift card.</p>
+
+        <h2 class="product-name"><?php echo $_product->getName() ?></h2>
+        <?php echo $block->getChildHtml('product_option'); ?>
+        <?php echo $block->getChildHtml('product_image'); ?>
+    </div>
+    
+</div>
+
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        var productUrl = "<?= $_product->getProductUrl() ?>";
+        var homepageUrl = "<?= $block->getUrl('') ?>";
+
+        $('#mb-ajaxsuite-close').on('click', function (event) {
+            event.preventDefault();
+            window.location.href = productUrl;
+            return false;
+        });
+
+        $('#ajaxcart_cancel').on('click', function (event) {
+            event.preventDefault();
+            window.location.href = homepageUrl;
+            return false;
+        });
+    });
+</script>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <check_delivery>
+            <general>
+                <active>1</active>
+                <display_on_product>1</display_on_product>
+                <zip_code>123456,789012</zip_code>
+                <block_title>Check Delivery Availability</block_title>
+                <txt_placeholder>Enter zipcode</txt_placeholder>
+                <product_page_success_message>Delivery possible in your area</product_page_success_message>
+                <product_page_failure_message>We do not deliver to this location.</product_page_failure_message>
+                <change_message>Item is available at ##zipcode##</change_message>
+		<success_message>Delivery possible in your area</success_message>
+		<failure_message>May be some of your product is not deliver to this location. Please verify on product view page.</failure_message>
+                <btn_chk>Check</btn_chk>
+                <btn_change>Change</btn_change>
+            </general>
+            <cod_restriction>
+                <success_message>COD is available in your area</success_message>
+		<failure_message>COD is not available in your area</failure_message>
+            </cod_restriction>
+        </check_delivery>
+    </default>
+</config>

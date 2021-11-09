@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="tagalys_read_store_configuration">
+        <observer name="tagalys_read_store_configuration" instance="Tagalys\Customizations\Observer\ReadStoreConfiguration" />
+    </event>
+    <event name="tagalys_read_product_details">
+        <observer name="tagalys_read_product_details" instance="Tagalys\Customizations\Observer\ReadProductDetails" />
+    </event>
+    <event name="tagalys_category_positions_updated">
+        <observer name="tagalys_category_positions_updated" instance="Tagalys\Customizations\Observer\CategoryPositionsUpdated" />
+    </event>
+</config>

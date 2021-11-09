@@ -1,0 +1,16 @@
+<?php
+/**
+ * Mage SMS - SMS notification & SMS marketing
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the BSD 3-Clause License
+ * It is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @category    TOPefekt
+ * @package     TOPefekt_Magesms
+ * @copyright   Copyright (c) 2012-2017 TOPefekt s.r.o. (http://www.mage-sms.com)
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ */
+?><div class="entry-edit"><div class="entry-edit-head"><h4><?php echo $block->getTitle(); ?> <span><?php echo $block->getCollection()->count(); ?></span></h4></div><fieldset class="magesms-marketing-customer"><?php if ($block->getCollection()->count()): ?><?php if (!$block->getDeleteCustomer() && !$block->getStoreManager()->isSingleStoreMode()): ?><div id="magesms-stores"><?php foreach ($block->getWebsites() as $website): ?><span class="badge" style="background:<?php echo $website->getColorWebsite(); ?>"><?php echo $website->getName(); ?></span><?php endforeach; ?></div><?php endif; ?><?php foreach($block->displayByAlphabet() as $letter=>$customers): ?><div><span class="bigLetter"><?php echo $letter; ?></span><?php $i=0;foreach($customers as $customer): ?><?php if ($block->getDeleteCustomer() || $i < 10): ?><span class="badge <?php echo $block->getDeleteCustomer() ? 'deleted' : '';?>"<?php echo !$block->getDeleteCustomer() ? ' style="background:'.$block->getColorWebsite($customer->getWebsiteId()).'"' : ''?>><a href="<?php echo $block->getUrl('customer/index/edit', ['id' => $customer->getId()]); ?>" title="<?php echo $customer->getCountryId().' - '.$customer->getTelephone(); ?>" target="_blank"><?php echo $customer->getLastname() ?> <?php echo $customer->getFirstname() ?></a><span class="delete" data-mage-init='{"Topefekt_Magesms/js/marketing/remove-customer": {"url":"<?php echo $block->getUrl('*/*/filter', ['action' => 'removeCustomer', 'id' => $customer->getId()]); ?>"}}'>x</span></span><?php elseif ($i == 10): ?><span class="badge more"><a title="<?php echo $letter; ?>" href="<?php echo $block->getUrl('*/*/filter', ['action' => 'listCustomers', 'letter' => $letter]); ?>" onclick="showPopup(this);return false;"><?php echo __('More...')?></a></span><?php endif; ?><?php $i++; endforeach; ?></div><?php endforeach; ?><?php else: ?><?php echo __('Customers found: 0')?><?php endif; ?></fieldset></div>

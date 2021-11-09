@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2019 Amasty (https://www.amasty.com)
+ * @package Amasty_Blog
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="amasty_blog_recent_posts" class="Amasty\Blog\Block\Sidebar\Recentpost">
+        <label translate="true">Amasty Blog Recent Posts</label>
+        <description translate="true">Amasty Blog Recent Posts</description>
+        <parameters>
+            <parameter name="header_text" xsi:type="text" required="false" visible="true">
+                <label translate="true">Header Text</label>
+            </parameter>
+            <parameter name="posts_limit" xsi:type="text" required="false" visible="true">
+                <label translate="true">Posts Limit</label>
+            </parameter>
+            <parameter name="wrap_block" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enable Widget Block Wrapping</label>
+                <description translate="true">Set 'No' to disable the block wrapping with the page content</description>
+            </parameter>
+            <parameter name="show_images" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Post Images in the Widget View</label>
+            </parameter>
+            <parameter name="display_date" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Date for Recent Posts</label>
+            </parameter>
+            <parameter name="date_manner" xsi:type="select" required="false" visible="true" source_model="Amasty\Blog\Model\Config\Source\Date">
+                <label translate="true">Date Format</label>
+                <depends>
+                    <parameter name="display_date" value="1" />
+                </depends>
+            </parameter>
+            <parameter name="display_short" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Short Content for Recent Posts</label>
+            </parameter>
+            <parameter name="short_limit" xsi:type="text" required="false" visible="true">
+                <label translate="true">Short Content Limit</label>
+                <depends>
+                    <parameter name="display_short" value="1" />
+                </depends>
+            </parameter>
+            <parameter name="amasty_widget_categories" xsi:type="multiselect" required="false" visible="true" source_model="Amasty\Blog\Model\ResourceModel\Categories\Collection">
+                <label translate="true">Post Categories for the Widget</label>
+            </parameter>
+            <parameter name="amasty_widget_tags" xsi:type="multiselect" required="false" visible="true" source_model="Amasty\Blog\Model\ResourceModel\Tag\Collection">
+                <label translate="true">Post Tags for the Widget</label>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget id="amasty_blog_category_widget" class="Amasty\Blog\Block\Sidebar\Category">
+        <label translate="true">Amasty Blog Category Widget</label>
+        <description translate="true">Amasty Blog Category Widget</description>
+        <parameters>
+            <parameter name="header_text" xsi:type="text" required="false" visible="true">
+                <label translate="true">Header Text</label>
+            </parameter>
+            <parameter name="categories_limit" xsi:type="text" required="false" visible="true">
+                <label translate="true">Categories Limit</label>
+            </parameter>
+            <parameter name="wrap_block" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enable Widget Block Wrapping</label>
+                <description translate="true">Set 'No' to disable the block wrapping with the page content</description>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget id="amasty_blog_recent_comments_widget" class="Amasty\Blog\Block\Sidebar\Recentcomments">
+        <label translate="true">Amasty Recent Comments Widget</label>
+        <description translate="true">Amasty Recent Comments Widget</description>
+        <parameters>
+            <parameter name="header_text" xsi:type="text" required="false" visible="true">
+                <label translate="true">Header Text</label>
+            </parameter>
+            <parameter name="comments_limit" xsi:type="text" required="false" visible="true">
+                <label translate="true">Comments Limit</label>
+            </parameter>
+            <parameter name="wrap_block" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enable Widget Block Wrapping</label>
+                <description translate="true">Set 'No' to disable the block wrapping with the page content</description>
+            </parameter>
+            <parameter name="display_date" xsi:type="select" required="false" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Date for Recent Comments</label>
+            </parameter>
+            <parameter name="date_manner" xsi:type="select" required="false" visible="true" source_model="Amasty\Blog\Model\Config\Source\Date">
+                <label translate="true">Date Format</label>
+                <depends>
+                    <parameter name="display_date" value="1" />
+                </depends>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget id="amasty_blog_tags_widget" class="Amasty\Blog\Block\Sidebar\Tag">
+        <label translate="true">Amasty Tags Widget</label>
+        <description translate="true">Amasty Tags Widget</description>
+    </widget>
+    <widget id="amasty_blog_featured_posts_widget" class="Amasty\Blog\Block\Featured">
+        <label translate="true">Amasty Blog Featured Widget</label>
+        <description translate="true">Amasty Blog Featured Widget</description>
+    </widget>
+</widgets>

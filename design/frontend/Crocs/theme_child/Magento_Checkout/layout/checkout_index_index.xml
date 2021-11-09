@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- <script src="Magento_Checkout::js/shippingMethodReloadFixCodilar.js" /> -->
+        <remove src="mage/calendar.css"/>
+        <remove src="Solwin_Contactwidget::css/file-upload.css"/>
+        <remove src="owl.carousel/assets/owl.carousel.css" />
+        <remove src="animate.css"/>
+        <remove src="icon-fonts/css/porto-icons-codes.css" />
+        <remove src="Magebees_Mostviewed::css/mostviewed.css"/>
+        <remove src="Tigren_Ajaxsuite::css/media.css"/>
+        <remove src="Tigren_Ajaxsuite::css/ajaxsuite.css"/>
+        <remove src="Tigren_Ajaxcart::css/ajaxcart.css"/>
+        <remove src="Ves_Trackorder::css/style.css" />
+        <remove src="WeltPixel_Quickview::css/magnific-popup.css" />
+        <remove src="Amasty_Promo::css/ampromo.css"/>
+        <remove src="Amasty_Promo::css/slick.css"/>
+        <remove src="Amasty_Promo::css/slick-theme.css"/>
+    </head>
+
+    <body>
+        <referenceBlock name="sw.topnav" remove="true"/>
+        <referenceBlock name="porto_header" remove="true"/>
+        <move element="logo" destination="page.wrapper" before="-"/>
+        <referenceContainer name="footer-container" remove="true" />
+        <referenceContainer name="ajaxsuite.popup.wrapper" remove="true"/>
+        <referenceContainer name="ampromo.popup" remove="true"/>
+
+
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="cart.product.risk.free.shiping" after="mostviewed">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">free_shipping_conviction_block</argument>
+                </arguments>
+            </block>
+            <referenceBlock name="checkout.root">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="checkout" xsi:type="array">
+                                <item name="children" xsi:type="array">
+                                    <item name="authentication" xsi:type="array">
+                                        <item name="config" xsi:type="array">
+                                            <item name="componentDisabled" xsi:type="boolean">true</item>
+                                        </item>
+                                    </item>
+                                    <item name="steps" xsi:type="array">
+                                        <item name="children" xsi:type="array">
+                                            <item name="shipping-step" xsi:type="array">
+                                                <item name="children" xsi:type="array">
+                                                    <item name="shippingAddress" xsi:type="array">
+                                                        <item name="children" xsi:type="array">
+                                                            <item name="shipping-address-fieldset" xsi:type="array">
+                                                                <item name="children" xsi:type="array">
+                                                                    <item name="postcode" xsi:type="array">
+                                                                        <!-- post-code field has custom UI component -->
+                                                                        <item name="component" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="min_text_length" xsi:type="number">6</item>
+                                                                            <item name="max_text_length" xsi:type="number">6</item>
+                                                                            <item name="validate-number" xsi:type="number">1</item>
+                                                                            <item name="required-entry" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                    </item>
+                                                                    <item name="telephone" xsi:type="array">
+                                                                        <item name="config" xsi:type="array">
+                                                                            <item name="tooltip" xsi:type="array">
+                                                                                <item name="description" xsi:type="string" translate="true">For delivery questions.</item>
+                                                                            </item>
+                                                                        </item>
+                                                                        <item name="validation" xsi:type="array">
+                                                                            <item name="min_text_length" xsi:type="number">10</item>
+                                                                            <item name="max_text_length" xsi:type="number">10</item>
+                                                                            <item name="validate-number" xsi:type="number">1</item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>

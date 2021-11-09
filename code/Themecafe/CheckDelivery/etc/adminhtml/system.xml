@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="themecafe_extension" translate="label" sortOrder="350">
+            <label><![CDATA[
+                <div style="padding-left:22px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0NWFmZjkwNi1hOGExLTBmNDctOTgzNC05YzE3YTNjMzdjMjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjMzNzRBNEU5NTEzMTFFNjlGQkVDMzEyODhENTcwMTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjMzNzRBNEQ5NTEzMTFFNjlGQkVDMzEyODhENTcwMTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTc0MzdkMzQtZDFmMy05NTRkLWJiNjEtNzBhZWY0NzJhZjllIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ1YWZmOTA2LWE4YTEtMGY0Ny05ODM0LTljMTdhM2MzN2MyOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkQYP/UAAAFDSURBVHjanJI9LwRRFIZnd4wlUW9ExYoChU6iJIIfQKJSLAmrEYVsTadQq7Zf0a7ER+0jOpVOSaLw0VmW8R555uZkQ+Mkz5w79z3v3Dv33FyaptF/osMe97PD+0p1cSne/6jtFBNise/ktpJnsoxxSxR/MRXR6tRGmfFL9Ioq4rwzLYgDNKv5DFu15RFsK5NiQMygTfNucS52vTERG2JObIp+sYRWEE9iT5yiha1ui1W+uC6uMBQ4sAp5Tez4FYfECFtaEYdiDM3G16ImpsSHX/GZbEJJvIgmvIpBtFCbGXPkNxGLHrQ84xgt1GbGB7JdoxbtiVyrWmihNjM2uDEJc/4epswl1DS8scYBWHQ5Q9o2lx1SMN5xAY45kG7+K2bcRKtSG9phcSGWxaMYd5r18kzcoEXtxsgJR2LUjb32E98CDABVLk2EVmSwcAAAAABJRU5ErkJggg==')
+ left 50% no-repeat;">THEMECAFE</div> ]]>
+            </label>
+        </tab>
+        <section id="check_delivery" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Check Delivery Setting</label>
+            <tab>themecafe_extension</tab>
+            <resource>Themecafe_CheckDelivery::config_checkout</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+               
+                <field id="display_on_product" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Display On Product Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>If yes it will be display zipcode validation form on product view page.</comment>
+                </field>
+                <field id="zip_code" translate="label" type="textarea" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Available ZIP Code</label>
+                    <comment>Format: 123456,395008,...If this is empty it's consider as delivery available on all zipcode's.</comment>
+                </field>
+                <field id="block_title" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <comment>It will be display title of block on product view page</comment>
+                    <validate>validate-length maximum-length-100</validate>
+                </field>
+                <field id="txt_placeholder" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Text Placeholder</label>
+                    <comment>Display placeholder of textarea on product view page</comment>
+                    <validate>validate-length maximum-length-50</validate>
+                </field>
+                <field id="btn_chk" translate="label" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Check Button Label</label>
+                    <validate>required-entry validate-length maximum-length-25</validate>
+                </field>
+                <field id="btn_change" translate="label" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Change Link Label</label>
+                    <validate>required-entry validate-length maximum-length-25</validate>
+                </field>
+                <field id="product_page_success_message" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Page Success Message</label>
+                    <validate>required-entry validate-length maximum-length-150</validate>
+                </field>
+                <field id="product_page_failure_message" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Product Page Failure Message</label>
+                    <validate>required-entry validate-length maximum-length-150</validate>
+                </field>
+                <field id="change_message" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Product Page Change Message</label>
+                    <comment>##zipcode## is used for displaying zipcode, if not available then zipcode will be not displaying.</comment>
+                    <validate>validate-length maximum-length-200</validate>
+                </field>
+                <field id="success_message" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Checkout Success Message</label>
+                    <validate>required-entry validate-length maximum-length-150</validate>
+                </field>
+                <field id="failure_message" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Checkout Failure Message</label>
+                    <validate>required-entry validate-length maximum-length-150</validate>
+                </field>
+                <group id="product_level" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="100">
+                    <label>Product level</label>
+                    <attribute type="expanded">0</attribute>
+                    <frontend_model>Magento\Config\Block\System\Config\Form\Fieldset</frontend_model>
+                    <field id="product_level_active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Enable For Product Level</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        <comment>If yes it will check only below product(s) otherwise it will check for all product's.</comment>
+                    </field>
+                    <field id="product_ids" translate="label" type="textarea" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" >
+                        <label>Product Id(s)</label>
+                        <comment>Format: 1,2,... Product id(s) should be in comma(,) separated, if empty it will be consider as all product's.</comment>
+                    </field>
+                </group>
+            </group>
+            <group id="cod_restriction" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="100">
+                <label>COD Restriction</label>
+                <attribute type="expanded">0</attribute>
+                <frontend_model>Magento\Config\Block\System\Config\Form\Fieldset</frontend_model>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable COD Restriction</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="zip_code" translate="label" type="textarea" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Zip code</label>
+                    <comment>Format: 123456,395008,...If this is empty it's consider as delivery available on all zipcode's.</comment>
+                </field>
+                <field id="success_message" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Success Message</label>
+                    <validate>required-entry validate-length maximum-length-150</validate>
+                </field>
+                <field id="failure_message" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Failure Message</label>
+                    <validate>required-entry validate-length maximum-length-150</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,3571 @@
+.cms-literide .page-wrapper .breadcrumbs
+{
+	display: none;
+}
+.cms-reviva .page-wrapper .breadcrumbs
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent
+{
+	max-width: inherit;
+    padding: 0px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid
+{
+	background: url("../images/literide/LiteRideWord_Cloud_3400px6_Zooey.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 53% top;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center
+{
+	width: 960px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+{
+	margin-top: 20px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+.flex-row .hero-shoe .product_shoe
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero img.lite-img
+{
+	position: relative;
+    top: 35px;
+    left: 80px;
+    max-height: 55px;
+    display: inline-block;
+} 
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero h2.hero-text.text-center
+{
+	left: 85px;
+    font-size: 59px;
+    position: relative;
+    top: 49px;
+    line-height: 54px;
+    color: #fff;
+    letter-spacing: .5px;
+    font-family: "proxima_nova_extrabold";
+    display: block;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero .flex-row
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero 
+.flex-row .hero-sub img
+{
+    /*min-width: 250px;*/
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: -80px;
+    width: 65%;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero 
+p.fashion-text
+{
+	margin: 45px auto 30px;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "proxima_nova_regular";
+    font-weight: 400;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+ .btn-overall 
+{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero 
+.btn-overall .btn
+{
+	padding-left: 5px;
+    padding-right: 5px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+ .btn-overall .btn a.cx-button
+{
+    color: #444;
+    background-color: #fff;
+    border-color: #444;
+    padding: 12px 30px 12px 30px;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+ .btn-overall .btn a.cx-button:hover
+{
+	color: #fff !important;
+	background-color: #444 !important;
+	border-color: #444 !important;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+.flex-row .hero-shoe img.lite-mob
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+.flex-row .hero-shoe h2.hero-mob.text-center
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+{
+	margin-top: 30px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-text
+{
+	float: left;
+    position: relative;
+    left: 50px;
+    top: 170px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-text .lie-text
+{
+	font-size: 24px;
+    line-height: 26px;
+    font-family: "proxima_nova_regular";
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-text
+.sink-text.text-center
+{
+	font-size: 35px;
+    line-height: 35px;
+    font-family: "proxima_nova_extrabold";
+    text-transform: uppercase;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+a img.women-desk
+{
+	margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+img.women-mob
+{
+	display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-product
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 30px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+ .women-product
+.center-item
+{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women .women-product
+.center-item .img2
+{
+	padding-right: 5px;
+    padding-left: 5px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women .women-product
+.center-item .img2 a img
+{
+     max-width: 100%;
+    height: auto;
+    /* display: block; */
+    margin-top: 10px;
+    text-align: center;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women .women-product
+.center-item .img2 a p.product-description
+{
+	font-size: 18px;
+    line-height: 20px;
+    margin-top: 7px;
+    color: #444;
+    font-family: "proxima_nova_regular";
+    height: 50px;
+}
+.btn-overall
+{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.btn
+{
+	padding-left: 5px;
+    padding-right: 5px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+a img.sandal-resp
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+a p.prod-descp
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.btn-overall.women-btn .btn a.cx-button.women-cx
+{
+	color: #444;
+    background-color: #fff;
+    border-color: #444;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+	padding: 12px 10px 12px 10px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.btn-overall.men-btn .btn a.cx-button.men-cx
+{
+	color: #444;
+    background-color: #fff;
+    border-color: #444;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+	padding: 12px 20px 12px 20px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech 
+.btn.tech a.cx-button.tech-button
+{
+	color: #444;
+    background-color: #fff;
+    border-color: #444;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+	padding: 12px 30px 12px 30px;
+}
+a.cx-button:hover
+{
+	color: #fff !important;
+	background-color: #444 !important;
+	border-color: #444 !important;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men
+ h3.men-subtext
+{
+	float: right;
+    position: relative;
+    top: 10em;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -.025em;
+    font-weight: 400;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+h3.men-subtext
+.men-text
+{
+	font-size: 24px;
+    line-height: 26px;
+    font-family: "proxima_nova_regular";
+    text-transform: uppercase;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+h3.men-subtext
+.warm-text
+{
+	font-size: 35px;
+    line-height: 35px;
+    font-family: "proxima_nova_extrabold";
+    text-transform: uppercase;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 24px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item
+{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 15px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item .img2
+{
+	padding-right: 5px;
+    padding-left: 5px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item .img2 a img.men-img-desk
+{
+	max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item .img2 a p.product-description
+{
+	font-size: 18px;
+    line-height: 20px;
+    margin-top: 7px;
+    color: #444;
+    font-family: "proxima_nova_regular";
+    height: 50px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+img.men-mob
+{
+	display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+a img.shoe-men
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+a p.shoe-descp
+{
+    display: none;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+{
+	margin-bottom: 70px;
+    margin-top: 100px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+img.tec-desk
+{
+	padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ img.tech-mob
+ {
+ 	display: none;
+ }
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ img.tech-head
+ {
+ 	margin-top: 20px;
+    margin: 20px auto 20px;
+    height: 45px;
+    max-width: 100%;
+    display: block;
+ }
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ img.tech-equal
+ {
+ 	margin: 0 auto 40px;
+    height: 50px;
+    max-width: 100%;
+    display: block;
+ }
+ .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ .btn-overall.tech.text-center.flexbox .btn.tech a.cx-button.tech-button
+ {
+    padding: 12px 70px 12px 70px;
+ }
+ 
+ .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ p.cx-brand-font.tech-text
+{
+	margin-top: 100px;
+	font-size: 18px;
+    line-height: 20px;
+    font-family: proxima_nova_regular;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page
+{
+	background: url("../images/literide/LiterideBottom-Back.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 0px;
+    background-size: 100% 950px;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 768px)
+{
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe img.lite-mob
+    {
+        display: inline-block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe h2.hero-mob.text-center
+    {
+        display: inline-block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    img.lite-img
+    {
+        display: none;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    h2.hero-text.text-center
+    {
+        display: none;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    a img.women-desk
+    {
+        display: none;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+     img.women-mob
+    {
+        display: inline-block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+    a img.sandal-resp
+    {
+        display: inline-block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+    a p.prod-descp
+    {
+        display: inline-block;
+    }
+	.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+ 	img.men-mob 
+ 	{
+    	display: inline-block;
+	}
+	.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+	a img.men-img-desk
+	{
+		display: none;
+	}
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+    a img.shoe-men
+    {
+        display: inline-block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+    a p.shoe-descp
+    {
+        display: inline-block;
+    }
+	.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ 	img.tec-desk
+ 	{
+ 		display: none;
+ 	}
+ 	.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+    img.tech-mob 
+    {
+     	display: inline-block;
+    }
+    .cms-literide .page-wrapper header.page-header.type11
+    {
+        margin: 0px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background: unset;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: unset;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    {
+        margin: 0px;
+        background: url("../images/literide/literideback-herMobile.jpg");
+        background-position: top center;
+        background-size: 100% 52%;
+        background-repeat: no-repeat;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row img.lite-sub
+    {
+        margin-bottom: 4vw;
+        max-width: 100%;
+        margin-left: -6vw;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        min-width: unset;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0px;
+        right: 8.33333333%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe img.lite-mob
+    {
+        width: 55%;
+        margin-right: 8vw;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: -11%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe h2.hero-mob.text-center
+    {
+        color: #fff;
+        font-size: 15vw;
+        margin-top: 15px;
+        margin-right: 25px;
+        font-family: "proxima_nova_extrabold";
+        display: block;
+    }
+     .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe a img.shoe-image
+    {
+        /*max-width: 100%;
+        height: auto;
+        display: block;*/
+        text-align: center;
+        width: 55%;
+        /*margin-top: -16vw;*/
+        margin-right: 8vw;
+        margin-top: 15vw;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe .product_shoe
+    {
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 16px;
+        display: block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    p.fashion-text.text-center
+    {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 25px 6px;
+        margin: 0px;
+        max-width: 99%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .btn-overall .btn a.cx-button
+    {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    h3.women-text 
+    {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -.025em;
+        font-weight: 400;
+        position: unset;
+        float: none;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    h3.women-text  .lie-text.text-center
+    {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 10vw;
+        margin-bottom: 1.5vw;
+        text-transform: uppercase;
+    }
+     .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    h3.women-text .sink-text.text-center
+    {
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 41px;
+        text-align: center;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    a img.sandal-resp
+    {
+        width: 85%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    a p.prod-descp
+    {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 7px;
+        margin-bottom: 40px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product .center-item .btn.img2
+    {
+       margin-top: 0px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product
+    {
+        margin-top: 30px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product .center-item .btn.img2 a img 
+    {
+        padding-bottom: 3px;
+        width: 93%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product .center-item .btn.img2 a p.product-description
+    {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .btn-overall.women-btn .btn a.cx-button.women-cx
+    {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men
+    h3.men-subtext 
+    {
+        position: unset;
+        float: none;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center
+    section.men h3.men-subtext .men-text.text-center
+    {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men h3.men-subtext .warm-text
+    {
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 42px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men a img.shoe-men
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men a p.shoe-descp
+    {
+        padding: 7px;
+        font-family: "proxima_nova_regular";
+        font-size: 14px;
+        line-height: 16px;
+    }
+     .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men img.men-mob
+    {
+        margin: 45px 0px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .flex-box-reserve.men-product .shoe-gallery.flex-box-reverse .btn.img2 a img
+    {
+        padding-bottom: 7px;
+        width: 93%;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .flex-box-reserve.men-product
+    {
+        margin-bottom: 40px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .flex-box-reserve.men-product .shoe-gallery.flex-box-reverse .btn.img2 a p.product-description
+    {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0px;
+    }
+     .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .btn-overall.men-btn .btn
+    {
+        padding: 0px;
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .btn-overall.men-btn .btn a.cx-button.men-cx
+    {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+   .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.tech
+    {
+        background: url("../images/literide/LiterideMobileBackgroundBottom.jpg");
+        background-position: bottom center;
+        background-size: 100% 103%;
+        background-repeat: no-repeat;
+        padding-bottom: 64px; 
+        margin-bottom: 0px;
+        margin-top: 80px;  
+    }
+    .cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.tech img.tech-mob
+    {
+        margin: 32px auto;
+        width: 88%;
+    }
+}
+
+
+/*css changes by shraddha*/
+
+.checkout-index-index form .field input
+{
+    height: 44px !important;
+    font-size: 15px !important;
+}
+.checkout-index-index form .field select
+{
+    font-size: 15px !important;
+    height: 44px !important;
+}
+
+.featured-categories-container .link-text
+{
+    height: 44px;   
+}
+/*Homepage Minichart product*/
+.minicart-items-wrapper 
+{
+    height: auto !important;
+}
+/*category page new flag*/
+.product-item .product-item-info  .products-label-wrapper 
+{
+    right: 0px !important;
+    width: 100%;
+}
+.products-label-wrapper .product-labels
+{
+    display: block;
+    float: right !important;
+}
+.products-label-wrapper .product-labels.new #DIV_2 
+{
+    border-left: unset !important;
+    border-top: unset !important;
+}
+.products-label-wrapper .product-labels.new #DIV_3
+{
+    border-left: unset !important;
+    border-bottom: unset !important;
+}
+.products-label-wrapper .product-labels div#DIV_1
+{
+    display: none;
+   padding-right: 0px;
+}
+.products-label-wrapper .product-labels .label-name
+ {
+    background: unset !important;
+    color: #E00000 !important;
+    font-size: 14px;
+    font-weight: 800 !important;
+}
+.column.main .product-info-main .products-label-wrapper
+{
+    display: inline-flex !important;
+}
+.product-info-main .products-label-wrapper .product-labels.new .label-name 
+{
+    padding-left: 0px;
+}
+@media screen and (max-width: 768px)
+{
+    .products-label-wrapper .product-labels .label-name
+    {
+        /*background: #E00000 !important;*/
+        color: #E00000 !important;
+        padding: 0px !important;
+        font-size: 14px;
+    }
+}
+/*for all page*/
+
+/*.catalog-category-view .page-wrapper .breadcrumbs
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper .breadcrumbs
+{
+    display: none;
+}*/
+body.categorypath-literide-brand.category-literide-brand .page-wrapper main#maincontent
+{
+    max-width: inherit;
+    padding: 0px;
+}
+ .category-cms
+{
+    margin-bottom: 0px;
+}
+/*body.page-products.catalog-category-view .page-wrapper main#maincontent .columns
+{
+    display: none;
+}*/
+body.page-with-filter.plumrocket-product-filter.ppf-pos-toolbar.page-products.categorypath-literide-brand.category-literide-brand .page-wrapper main#maincontent .columns
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid
+{
+    background: url("../images/literide/LiteRideWord_Cloud_3400px6_Zooey.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 53% top;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center
+{
+    width: 960px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+{
+    margin-top: 20px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+.flex-row .hero-shoe .product_shoe
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero img.lite-img
+{
+    position: relative;
+    top: 35px;
+    left: 80px;
+    max-height: 55px;
+    display: inline-block;
+} 
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero h2.hero-text.text-center
+{
+    left: 85px;
+    font-size: 59px;
+    position: relative;
+    top: 49px;
+    line-height: 54px;
+    color: #fff;
+    letter-spacing: .5px;
+    font-family: "proxima_nova_extrabold";
+    display: block;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero .flex-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero 
+.flex-row .hero-sub img
+{
+    /*min-width: 250px;*/
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: -80px;
+    width: 65%;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero 
+p.fashion-text
+{
+    margin: 45px auto 30px;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "proxima_nova_regular";
+    font-weight: 400;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+ .btn-overall 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero 
+.btn-overall .btn
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+ .btn-overall .btn a.cx-button
+{
+    color: #444;
+    background-color: #fff;
+    border-color: #444;
+    padding: 12px 30px 12px 30px;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+ .btn-overall .btn a.cx-button:hover
+{
+    color: #fff !important;
+    background-color: #444 !important;
+    border-color: #444 !important;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+.flex-row .hero-shoe img.lite-mob
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+.flex-row .hero-shoe h2.hero-mob.text-center
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+{
+    margin-top: 30px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-text
+{
+    float: left;
+    position: relative;
+    left: 50px;
+    top: 170px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-text .lie-text
+{
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "proxima_nova_regular";
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-text
+.sink-text.text-center
+{
+    font-size: 35px;
+    line-height: 35px;
+    font-family: "proxima_nova_extrabold";
+    text-transform: uppercase;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+a img.women-desk
+{
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+img.women-mob
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.women-product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 30px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+ .women-product
+.center-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women .women-product
+.center-item .img2
+{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women .women-product
+.center-item .img2 a img
+{
+     max-width: 100%;
+    height: auto;
+    /* display: block; */
+    margin-top: 10px;
+    text-align: center;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women .women-product
+.center-item .img2 a p.product-description
+{
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 7px;
+    color: #444;
+    font-family: "proxima_nova_regular";
+    height: 50px;
+}
+.btn-overall
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.btn
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+a img.sandal-resp
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+a p.prod-descp
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+.btn-overall.women-btn .btn a.cx-button.women-cx
+{
+    color: #444;
+    background-color: #fff;
+    border-color: #444;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 10px 12px 10px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.btn-overall.men-btn .btn a.cx-button.men-cx
+{
+    color: #444;
+    background-color: #fff;
+    border-color: #444;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 20px 12px 20px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech 
+.btn.tech a.cx-button.tech-button
+{
+    color: #444;
+    background-color: #fff;
+    border-color: #444;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 30px 12px 30px;
+}
+a.cx-button:hover
+{
+    color: #fff !important;
+    background-color: #444 !important;
+    border-color: #444 !important;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men
+ h3.men-subtext
+{
+    float: right;
+    position: relative;
+    top: 10em;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -.025em;
+    font-weight: 400;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+h3.men-subtext
+.men-text
+{
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "proxima_nova_regular";
+    text-transform: uppercase;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+h3.men-subtext
+.warm-text
+{
+    font-size: 35px;
+    line-height: 35px;
+    font-family: "proxima_nova_extrabold";
+    text-transform: uppercase;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 24px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 15px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item .img2
+{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item .img2 a img.men-img-desk
+{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+.men-product .center-item .img2 a p.product-description
+{
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 7px;
+    color: #444;
+    font-family: "proxima_nova_regular";
+    height: 50px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+img.men-mob
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+a img.shoe-men
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+a p.shoe-descp
+{
+    display: none;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+{
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+img.tec-desk
+{
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ img.tech-mob
+ {
+    display: none;
+ }
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ img.tech-head
+ {
+    margin-top: 20px;
+    margin: 20px auto 20px;
+    height: 45px;
+    max-width: 100%;
+    display: block;
+ }
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ img.tech-equal
+ {
+    margin: 0 auto 40px;
+    height: 50px;
+    max-width: 100%;
+    display: block;
+ }
+ body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ .btn-overall.tech.text-center.flexbox .btn.tech a.cx-button.tech-button
+ {
+    padding: 12px 70px 12px 70px;
+ }
+ 
+ body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+ p.cx-brand-font.tech-text
+{
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: proxima_nova_regular;
+}
+body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page
+{
+    background: url("../images/literide/LiterideBottom-Back.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 0px;
+    background-size: 100% 950px;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 768px)
+{
+     .category-cms
+    {
+        margin-bottom: 0px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe img.lite-mob
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms.literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe h2.hero-mob.text-center
+    {
+        display: inline-block;
+        font-size: 37px;
+        margin-right: 15px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    img.lite-img
+    {
+        display: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    h2.hero-text.text-center
+    {
+        display: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    a img.women-desk
+    {
+        display: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.women img.women-mob
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+    a img.sandal-resp
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women 
+    a p.prod-descp
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+    img.men-mob 
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+    a img.men-img-desk
+    {
+        display: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+    a img.shoe-men
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men 
+    a p.shoe-descp
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+    img.tec-desk
+    {
+        display: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.tech
+    img.tech-mob 
+    {
+        display: inline-block;
+    }
+    body.page-products.catalog-category-view .page-wrapper header.page-header.type11
+    {
+        margin: 0px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background: unset;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: unset;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    {
+        margin: 0px;
+        background: url("../images/literide/literideback-herMobile.jpg");
+        background-position: top center;
+        background-size: 100% 52%;
+        background-repeat: no-repeat;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row img.lite-sub
+    {
+        margin-bottom: 4vw;
+        max-width: 100%;
+        margin-left: -6vw;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        min-width: unset;
+        margin-top: 15%;
+        width: 100%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -12%;
+        right: 8.33333%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe img.lite-mob
+    {
+        width: 55%;
+        margin-right: 8vw;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: -11%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe h2.hero-mob.text-center
+    {
+        color: #fff;
+        font-size: 37px;
+        margin-top: 15px;
+        margin-right: 0px;
+        font-family: "proxima_nova_extrabold";
+        display: inline-block;
+    }
+     body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe a img.shoe-image
+    {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 15vw;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .flex-row .hero-shoe .product_shoe
+    {
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 16px;
+        display: block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    p.fashion-text.text-center
+    {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 25px 6px;
+        margin: 0px;
+        max-width: 99%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.hero
+    .btn-overall .btn a.cx-button
+    {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    h3.women-text 
+    {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -.025em;
+        font-weight: 400;
+        position: unset;
+        float: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    h3.women-text  .lie-text.text-center
+    {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 10vw;
+        margin-bottom: 1.5vw;
+        text-transform: uppercase;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    h3.women-text .sink-text.text-center
+    {
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 41px;
+        text-align: center;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    a img.sandal-resp
+    {
+        width: 85%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    a p.prod-descp
+    {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 7px;
+        margin-bottom: 40px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product .center-item .btn.img2
+    {
+       margin-top: 0px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product
+    {
+        margin-top: 30px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product .center-item .btn.img2 a img 
+    {
+        padding-bottom: 3px;
+        width: 93%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .flex-box-reserve.women-product .center-item .btn.img2 a p.product-description
+    {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.women
+    .btn-overall.women-btn .btn a.cx-button.women-cx
+    {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center section.men
+    h3.men-subtext 
+    {
+        position: unset;
+        float: none;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center
+    section.men h3.men-subtext .men-text.text-center
+    {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men h3.men-subtext .warm-text
+    {
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 42px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men a img.shoe-men
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men a p.shoe-descp
+    {
+        padding: 7px;
+        font-family: "proxima_nova_regular";
+        font-size: 14px;
+        line-height: 16px;
+    }
+     body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men img.men-mob
+    {
+        margin: 45px 0px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .flex-box-reserve.men-product .shoe-gallery.flex-box-reverse .btn.img2 a img
+    {
+        padding-bottom: 7px;
+        width: 93%;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .flex-box-reserve.men-product
+    {
+        margin-bottom: 40px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .flex-box-reserve.men-product .shoe-gallery.flex-box-reverse .btn.img2 a p.product-description
+    {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0px;
+    }
+     body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .btn-overall.men-btn .btn
+    {
+        padding: 0px;
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.men .btn-overall.men-btn .btn a.cx-button.men-cx
+    {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+   body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.tech
+    {
+        background: url("../images/literide/LiterideMobileBackgroundBottom.jpg");
+        background-position: bottom center;
+        background-size: 100% 103%;
+        background-repeat: no-repeat;
+        padding-bottom: 64px; 
+        margin-bottom: 0px;
+        margin-top: 80px;  
+    }
+    body.page-products.catalog-category-view .page-wrapper main#maincontent .category-view .category-cms .literide-page .cs_container-fluid .cs_container-crocs.text-center 
+    section.tech img.tech-mob
+    {
+        margin: 32px auto;
+        width: 88%;
+    }
+}
+
+/*kidssection*/
+ section.kids .kids-wrap
+{
+    margin-top: 150px;
+}
+.cms-literide .page-wrapper main#maincontent .columns .column.main .literide-page .cs_container-fluid 
+.cs_container-crocs.text-center section.kids .kids-wrap .flex-column
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.kids .kids-wrap .flex-column h3
+{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 4px;
+}
+section.kids .kids-wrap .flex-colum a p.product_description
+{
+    display: none;
+}
+section.kids .prod
+{
+    margin-top: 40px;
+}
+section.kids .kids-wrap .flex-column h3 .sm-text
+{
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "proxima_nova_regular";
+    text-transform: uppercase;
+}
+section.kids .kids-wrap .flex-column h3 .lg-text
+{
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-family: "proxima_nova_extrabold";
+}
+section.kids .kids-wrap .flex-column a img.img-responsive-prod
+{
+    margin-top: 95px;
+    width: 100%;
+}
+section.kids .kids-wrap .flex-column img.img-responsive-kid
+{
+    width: 100%;
+}
+section.kids .kids-wrap .flex-column a p.product_description
+{
+    display: none;
+}
+section.kids  .prod .shoe-gallery .btn
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+section.kids  .prod .shoe-gallery .btn a img.img-responsive-gallery
+{
+    margin: 0 auto;
+}
+section.kids .prod .shoe-gallery .btn a p.product_description
+{
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "proxima_nova_regular";
+    margin-top: 7px;
+}
+
+section.kids .btn-overall 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 45px 0px;
+}
+section.kids .btn 
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section.kids .btn-overall .btn a.cx-button 
+{
+    color: #444;
+    background-color: #fff;
+    border-color: #444;
+    padding: 12px 30px 12px 30px;
+    border-width: 2px;
+    line-height: 1.0;
+    border: 2px solid #444;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "proxima_nova_extrabold";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px)
+{
+    section.kids .kids-wrap
+    {
+        margin-top: 0px !important;
+    }
+    section.kids .kids-wrap .flex-colum a p.product_description
+    {
+        display: block;
+    }
+    section.kids .kids-wrap .flex-column
+    {
+        padding: 0px;
+    }
+    section.kids .kids-wrap .flex-column h3
+    {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+    section.kids .kids-wrap .flex-column h3 .sm-text
+    {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 35vw;
+        margin-bottom: 1.5vw;
+        text-align: center;
+    }
+    section.kids .kids-wrap .flex-column h3 .lg-text
+    {
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 13vw;
+        text-align: center;
+    }
+    section.kids .kids-wrap .flex-column a img.img-responsive-prod
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    section.kids .kids-wrap .flex-column a img.img-responsive-prod p.product_description
+    {
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 2vw;
+        font-family: proxima_nova_regular;
+    }
+    section.kids .kids-wrap .flex-column
+    {
+        padding: 0px;
+    }
+    section.kids .kids-wrap .flex-column img.img-responsive-kid
+    {
+        margin: 14vw 0;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: 93%;
+    }
+    section.kids .kids-wrap
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+     section.kids  .prod .shoe-gallery
+     {
+        display: inline-block;
+        align-items: center;
+        justify-content: flex-end;
+        align-content: center;
+        flex-wrap: wrap-reverse;
+        margin-top: 15px;
+        width: 100%;
+    }
+    section.kids .prod .shoe-gallery .btn
+    {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+    }
+    section.kids .prod .shoe-gallery .btn a img.img-responsive-gallery
+    {
+        width: 93%;
+    }
+    section.kids .prod .shoe-gallery .btn a p.product_description
+    {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    section.kids .btn-overall
+    {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10px;
+    }
+    section.kids .btn
+    {
+        padding: 0px;
+    }
+    section.kids .btn-overall .btn a.cx-button 
+    {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+}
+
+/*video section*/
+.embed-responsive
+{
+    overflow: visible;
+    height: auto;
+}
+.embed-responsive iframe
+{
+    border: solid 1px #d7d7d7;
+    position: relative;
+    top: 58px;
+    bottom: 0;
+    left: 10px;
+    max-width: 400px;
+    height: 393px;
+}
+section.celeb-video.mobile-col.desktop-row
+{
+    margin-top: 150px;
+}
+section.celeb-video.mobile-col.desktop-row .flex-column
+{
+    z-index: 1;
+   display: block;
+}
+section.celeb-video.mobile-col.desktop-row .flex-column .video-description
+{
+    margin-right: 4em;
+    margin-top: 80px;
+}
+section.celeb-video.mobile-col.desktop-row .flex-column .video-description .cx-heavy-brand-font
+{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 4px;
+}
+section.celeb-video.mobile-col.desktop-row .flex-column .video-description p
+{
+    font-size: 20px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 768px)
+{
+    section.celeb-video.mobile-col.desktop-row
+    {
+        background-color: #fbd5cf;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 13%, rgba(251,213,207,1) 13%);
+        margin-top: 80px;
+    }
+    section.celeb-video.mobile-col.desktop-row .flex-column
+    {
+        width: 95%;
+    }
+    .embed-responsive iframe
+    {
+        /*height: 306px;*/
+        width: 100%;
+        max-width: unset;
+        top: unset;
+    }
+    section.celeb-video.mobile-col.desktop-row .flex-column .video-description
+    {
+        margin-top: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 374px) and (min-width: 320px)
+{
+    .embed-responsive iframe
+    {
+        height: 306px;
+    }
+}
+@media screen and (max-width: 424px) and (min-width: 375px)
+{
+    .embed-responsive iframe
+    {
+        height: 334px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 425px)
+{
+    .embed-responsive iframe
+    {
+        height: 373px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px)
+{
+    .embed-responsive iframe
+    {
+        max-width: unset;
+        left: -36px;
+        border: none;
+        height: 402px;
+        width: 100%;
+    }
+}
+/*@media screen and (max-width: 425px)
+{
+    .embed-responsive iframe
+    {
+        height: 345px;
+    }
+}*/
+/*@media screen and (max-width: 768px) 
+{
+    .embed-responsive iframe
+    {
+        max-width: 500px;
+        height: 500px;
+        left: unset;
+    }
+}*/
+/*CAYA202 Start*/
+/*category page new flag*/
+.product-item .product-item-info  .products-label-wrapper 
+{
+   /* left: auto;
+    right: 0px !important;
+    width: 100%;*/
+}
+.column.main .product-info-main .products-label-wrapper
+{
+    display: inline-flex !important;
+    left: auto;
+    right: 0px !important;
+    width: 100%;
+}
+.products-label-wrapper .product-labels
+{
+    display: block;
+    float: right !important;
+}
+.products-label-wrapper .product-labels.new #DIV_2 
+{
+    border-left: unset !important;
+    border-top: unset !important;
+}
+.products-label-wrapper .product-labels.new #DIV_3
+{
+    border-left: unset !important;
+    border-bottom: unset !important;
+}
+.products-label-wrapper .product-labels div#DIV_1
+{
+    display: none;
+   padding-right: 0px;
+}
+.products-label-wrapper .product-labels .label-name
+ {
+    background: unset !important;
+    color: #E00000 !important;
+    font-size: 14px;
+    font-weight: 800 !important;
+}
+.products-label-wrapper .product-labels.new-colors .label-name 
+{
+    padding-left: 0px;
+}
+@media screen and (max-width: 768px)
+{
+    .products-label-wrapper .product-labels .label-name
+    {
+        /*background: #E00000 !important;*/
+        color: #E00000 !important;
+        padding: 0px !important;
+        font-size: 14px;
+    }
+}
+
+/*minicart*/
+.minicart-wrapper
+{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -20px;
+    left: 980px;
+}
+/*addTocart*/
+/*.catalog-product-view #mb-ajaxsuite-popup-wrapper
+{
+    display: block;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    top: 60px !important;
+    width: 480px !important;
+    padding: 15px 10px !important;
+    left: 443px;
+}
+.mb-ajaxsuite-popup-wrapper .mb-ajaxsuite-popup-border .row .col-md-12 
+{
+    width: 480px;
+}
+#mb-ajaxcart-wrapper .ajaxcart-success-box .ajaxcart-buttons button#ajaxcart_cancel, button#ajaxcart_checkout
+{
+    width: 100%;
+}
+.page-wrapper #mb-ajaxcart-wrapper
+{
+    width: 100%;
+}
+@media screen and (max-width: 768px)
+{
+    .fancybox-skin .fancybox-close
+    {
+      top: 0px;
+        right: -10px;  
+    }
+}*/
+.page-wrapper #mb-ajaxcart-wrapper .details-right .product-name
+{
+    width: 60%;
+    word-wrap: break-word;
+}
+@media screen and (min-width: 767px)
+{
+    .catalog-product-view #mb-ajaxsuite-popup-wrapper
+    {
+        width: 360px;
+    }
+    .page-wrapper #mb-ajaxcart-wrapper .details-right
+    {
+        width: 100%;
+    }
+    .catalog-product-view #mb-ajaxsuite-popup-wrapper
+    {
+        top: 50px !important;
+    }
+    #mb-ajaxcart-wrapper .ajaxcart-success-box .ajaxcart-buttons
+    {
+            width: 60% !important;
+    }
+    .page-wrapper .mb-ajaxsuite-popup-wrapper .min-ship-notify
+    {
+        width: 60%;
+    }
+    .page-wrapper #mb-ajaxcart-wrapper div.subtotal
+    {
+        width: 64%;
+    }
+    div#sm-error
+    {
+        width: 297px;
+    }
+   div#sm-error img.photo.image
+    {
+        width: 50%;
+    }
+   .mb-login-popup-title.center
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .page-wrapper #mb-ajaxcart-wrapper .details-right .product-name
+    {
+        width: 100%;
+    }
+    #mb-ajaxcart-wrapper .ajaxcart-success-box .ajaxcart-buttons
+    {
+        margin-top: -50px;
+    }
+    #mb-ajaxcart-wrapper .ajaxcart-success-box .ajaxcart-buttons button#ajaxcart_checkout
+    {
+        padding: 0px 15px;
+    }
+    a.fancybox-item.fancybox-close
+    {
+        top: -10px;
+        right: -10px;
+    }
+    .mb-login-popup-title.center
+    {
+        display: none;
+    }
+    div#sm-error img.photo.image
+    {
+        width: 50%;
+    }
+}
+/*product size text*/
+div#size-disclaimer-content
+{
+    color: red;
+    font-weight: bold;
+}
+div#size-disclaimer-content a
+{
+    color: red;
+    text-decoration: underline;
+}
+button.ui-datepicker-trigger.v-middle
+{
+    display: none !important;
+}
+/*calender*/
+table.ui-datepicker-calendar
+{
+    background: #ffffff;
+    border: #cfcfcf 1px solid;
+    border-collapse: collapse;
+}
+div#ui-datepicker-div
+{
+    position: absolute;
+    top: 470px;
+    left: 235.5px;
+    display: none;
+    padding: 15px;
+    border: #ffffff 4px solid;
+    box-sizing: border-box;
+    background: #efefef;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.35);
+}
+.ui-datepicker .ui-datepicker-header 
+{
+    background: transparent;
+    border: none;
+    padding-bottom: 10px;
+    position: relative;
+    padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next 
+{
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em;
+    cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev 
+{
+    left: 2px;
+}
+.ui-datepicker .ui-datepicker-next 
+{
+    right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span
+{
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -5px;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    border: solid;
+    border-width: 5px 8px 5px 0;
+    border-color: transparent #ff9635 transparent transparent;
+}
+.ui-datepicker .ui-datepicker-next span 
+{
+    margin-left: 0px;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #ff9635;
+}
+.ui-datepicker .ui-datepicker-title 
+{
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month 
+{
+    width: 47%;
+    margin-right: 6%;
+}
+.ui-datepicker .ui-datepicker-title select 
+{
+    font-size: 1em;
+    margin: 1px 0;
+}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-year 
+{
+    width: 47%;
+}
+.ui-datepicker .ui-datepicker-calendar 
+{
+    background: #ffffff;
+    border: #cfcfcf 1px solid;
+    border-collapse: collapse;
+}
+.ui-datepicker .ui-datepicker-calendar th 
+{
+    background: #efefef;
+    border: #cfcfcf 1px solid;
+    padding: 4px;
+    text-transform: uppercase;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-state-disabled 
+{
+    background: #f9f9f9;
+}
+.ui-datepicker .ui-datepicker-calendar td 
+{
+    border: #cfcfcf 1px solid;
+}
+.ui-datepicker .ui-datepicker-calendar td a 
+{
+    padding: 4px;
+    display: block;
+}
+/*staticpage_2020CAYA*/
+body.cms-come-as-you-are main#maincontent, .categorypath-caya2020.category-caya2020 main#maincontent, .categorypath-caya2020.category-caya2020 main#maincontent,
+.categorypath-come-as-you-are-2020.category-come-as-you-are-2020 main#maincontent
+{
+    max-width: unset;
+    padding: 0px;
+}
+.categorypath-caya2020.category-caya2020 .columns, .categorypath-caya2020.category-caya2020 .columns, .categorypath-come-as-you-are-2020.category-come-as-you-are-2020 .columns
+{
+    display: none;
+}
+body.cms-come-as-you-are .breadcrumbs
+{
+    display: none;
+}
+body.cms-come-as-you-are .cx_container-fluid
+{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.caya-landing-page .cx_container-crocs 
+{
+    min-width: 1200px;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+.d-flex
+{
+    display: flex;
+}
+.flex-column
+{
+    flex-direction: column;
+}
+.caya-landing-page .hero a, .caya-landing-page .block-zooey a 
+{
+    position: relative;
+    text-decoration: none;
+}
+.caya-landing-page img 
+{
+    width: 100%;
+    margin-bottom: -4px;
+}
+.caya-landing-page .title-block 
+{
+    position: absolute;
+    top: 230px;
+    margin-bottom: 230px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.caya-landing-page .hero .title-block .text-xl-title 
+{
+    font-size: 115px;
+    line-height: 115px;
+    margin-bottom: -20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(68,68,68, 0.8);
+    font-family: "proxima_nova_extrabold";
+    font-weight: 700;
+}
+.caya-landing-page .text-nbsp 
+{
+    font-size: 40px;
+}
+.caya-landing-page .text-trade 
+{
+    font-size: 75px;
+    line-height: 85px;
+    vertical-align: text-top;
+}
+span.sr-only
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+/*.caya-landing-page .hero .text-md-caption 
+{
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_extrabold";
+    font-weight: 700;
+}*/
+.hero .title-block .cx-heavy-brand-font
+{
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_extrabold";
+    font-weight: 700;
+}
+.hero .title-block .cx-brand-font
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_regular";
+}
+.jibbitz .cx-brand-font 
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_regular";
+}
+/*body.cms-come-as-you-are .cx-heavy-brand-font
+{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_extrabold";
+    font-weight: 700;
+}*/
+.caya-landing-page .text-lg-title 
+{
+    color: #3a3a3a;
+    font-size: 36px;
+    line-height: 38px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.caya-landing-page .text-lg-title 
+{
+    color: #3a3a3a;
+    font-size: 36px;
+    line-height: 38px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-family: "proxima_nova_extrabold";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: unset;
+}
+.caya-landing-page .hero-p
+{
+   /* margin-bottom: 65px;*/
+    color: #3a3a3a;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 5px;
+    text-shadow: none;
+    font-weight: 400;
+}
+br.d-md-none 
+{
+    display: none;
+}
+.clog .block-zooey
+{
+    max-height: 595px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+.clog .block-zooey a.img-zooey
+{
+    margin-right: 10px;
+}
+.clog .block-zooey a.img-zooey .caption-block
+{
+    top: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+}
+.caya-landing-page .clog .caption-block .cx-heavy-brand-font
+{
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "proxima_nova_extrabold";
+    text-shadow: 2px 2px 4px #333;
+}
+.caya-landing-page .clog .caption-block .cx-brand-font
+{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "proxima_nova_regular";
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+}
+.clog .block-zooey a.color-text-block
+{
+    align-items: center;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 400px;
+    margin-bottom: 0;
+    background-color: #c4e5d6;
+    border: 2px #c4e5d6 solid;
+    text-align: center;
+    justify-content: center;
+}
+.slide .text-md-title, .clog .text-md-title
+{
+    color: #3a3a3a;
+    font-size: 31px;
+    line-height: 36px;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "proxima_nova_extrabold";
+}
+.slide .text-p, .clog .text-p
+{
+    color: #3a3a3a;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 5px;
+    text-shadow: none;
+    font-family: "proxima_nova_regular";
+    font-weight: 400;
+}
+.clog .cx-button-link.mx-auto
+{
+    background-color: transparent;
+    border: none;
+    color: #3a3a3a !important;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: -12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.clog .cx-button-link.mx-auto .cx-heavy-brand-font
+{
+    text-transform: uppercase;
+    color: #3a3a3a !important;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: none;
+    font-weight: 700;
+}
+div#ClassicSwiper
+{
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sidePrevNext 
+{
+    display: none;
+}
+div#ClassicSwiper .swiper-wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    list-style: none;
+    padding-bottom: 6px;
+    transform: translate3d(0px, 0px, 0px);
+    border-bottom: unset;
+    margin-top: 15px;
+}
+div#ClassicSwiper .swiper-wrapper .owl-controls
+{
+    display: none;
+}
+div#SlideSwiper .swiper-wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    list-style: none;
+    padding-bottom: 6px;
+    transform: translate3d(0px, 0px, 0px) !important;
+    border-bottom: unset;
+    margin-top: 15px;
+}
+div#SlideSwiper .swiper-wrapper .owl-stage-outer
+{
+    display: block;
+    margin: 0 auto;
+}
+section.clog
+{
+   margin-top: 40px;
+}
+.swiper-wrapper .swiper-slide
+{
+    width: 268px;
+    margin-right: 15px;
+}
+.swiper-wrapper .swiper-slide img.img-clog
+{
+    max-height: 94px;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.clog a.btn-overall
+{
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+}
+/*.clog .cx-heavy-brand-font
+{
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_extrabold";
+    font-weight: 700;
+}
+.clog .cx-brand-font
+{
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #333;
+    font-family: "proxima_nova_regular";
+    font-weight: 400;
+}*/
+.clog a.btn-overall .cx-button
+{
+    background-color: #c4e5d6;
+    border: 2px #c4e5d6 solid;
+    color: #3a3a3a;
+    width: 310px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 10px;
+    margin-bottom: 70px;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.slide .block-laura
+{
+    max-height: 524px;
+    margin-bottom: 10px;
+    flex-direction: row-reverse;
+}
+.slide .block-laura a.img-laura
+{
+    margin-left: 10px;
+}
+.slide-orange
+{
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 400px;
+    margin-bottom: 0;
+    background-color: #ffa65a;
+    border: 2px #ffa65a solid;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.caya-landing-page .slide .slide-orange
+{
+    background-color: #ffa65a !important;
+    border: 2px #ffa65a solid !important;
+}
+section.jibbitz
+{
+    margin-bottom: 70px;
+}
+section.jibbitz a
+{
+    text-decoration: none;
+}
+section.jibbitz a .block-jibbitz
+{
+    max-height: 524px;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+section.jibbitz a .block-jibbitz .img-jibbitz
+{
+    margin-right: 10px;
+}
+section.jibbitz a .block-jibbitz .jibbitz-text-block h3.cx-heavy-brand-font, section.jibbitz a .block-jibbitz .jibbitz-text-block h3.cx-heavy-brand-font 
+{
+    font-size: 31px;
+    line-height: 36px;
+}
+section.jibbitz a .block-jibbitz .jibbitz-text-block, section.jibbitz a .block-jibbitz .jibbitz-text-block
+{
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 400px;
+    margin-bottom: 0;
+    background-color: #eb3c94;
+    border: 2px #eb3c94 solid;
+    justify-content: end;
+}
+section.jibbitz a .block-jibbitz .jibbitz-text-block .text-md-title, section.jibbitz a .block-jibbitz .jibbitz-text-block
+{
+    color: #fff;
+}
+section.jibbitz a .block-jibbitz .jibbitz-text-block .cx-button-link .cx-heavy-brand-font
+{
+    background-color: transparent;
+    border: none;
+    color: #fff !important;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: -12px;
+}
+.row-jibbitz 
+{
+    margin-bottom: 40px;
+}
+.row-jibbitz .d-md-none
+{
+    display: none;
+}
+.row-jibbitz .d-none
+{
+    display: block;
+}
+section.jibbitz .btn-overall
+{
+    width: 100%;
+    justify-content: center;
+}
+section.clog .d-flex a.img-flex-fill
+{
+    display: block;
+}
+section.jibbitz .btn-overall .jibbitz-pink
+{
+    color: #fff;
+    background-color: #eb3c94;
+    border: 2px #eb3c94 solid;
+    width: 310px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 10px;
+    margin: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.caya-landing-page .cx-button.clog-green:hover, .cx-button.slide-orange:hover
+{
+    box-shadow: inset 0 0 0 2px #3a3a3a;
+}
+.cx-button.button-fff.jibbitz-pink:hover
+{
+    box-shadow: inset 0 0 0 2px #fff;
+}
+div#ClassicSwiper .owl-controls, div#SlideSwiper .owl-controls
+{
+    display: none;
+}
+.outsideNavigation.swiperCarousel
+{
+    width: calc(100% - 80px) !important;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    margin-top: 15px;
+}
+.featured-categories-container .link-text
+{
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px)
+{
+    .caya-landing-page .cx_container-crocs
+    {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+    }
+    .caya-landing-page .title-block
+    {
+        margin-bottom: 64px;
+        margin-left: 10px;
+        top: 66px;
+    }
+    .caya-landing-page .hero .title-block .text-xl-title
+    {
+        margin-bottom: -3px;
+        font-size: 35px;
+        line-height: 25px;
+    }
+    .hero .title-block .cx-heavy-brand-font
+    {
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+    .caya-landing-page .text-nbsp
+    {
+        font-size: 0;
+    }
+    .caya-landing-page .text-trade
+    {
+        font-size: 29px;
+        line-height: 25px;
+    }
+    .hero .title-block .cx-heavy-brand-font, .hero .title-block .cx-brand-font
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .caya-landing-page .clog .caption-block .cx-heavy-brand-font
+    {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 0px;
+    }
+    .caya-landing-page .clog .caption-block .cx-brand-font
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    br.d-none.d-md-block
+    {
+        display: none;
+    }
+    br.d-md-none
+    {
+        display: block;
+    }
+    .caya-landing-page .text-p
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .clog .block-zooey
+    {
+        flex-direction: column;
+    }
+    .clog .block-zooey a.img-zooey
+    {
+        margin-right: 0px;
+    }
+    .clog .block-zooey a.img-zooey .caption-block
+    {
+       margin-bottom: 40px;
+        margin-left: 2vw;
+        top: 18px;
+    }
+    /*.caya-landing-page .text-sm-caption
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }*/
+    .clog .block-zooey a.color-text-block
+    {
+        min-width: auto;
+        min-height: 270px;
+        max-height: 270px;
+        margin-bottom: 10px;
+    }
+    .caya-landing-page .text-md-title
+    {
+        color: #3a3a3a;
+        font-size: 31px;
+        line-height: 36px;
+    }
+    /*.caya-landing-page img
+    {
+        padding: 0px 30px;
+    }*/
+   /* .d-flex .flex-fill img
+    {
+        padding: 0px 30px;
+    }*/
+    .featured-categories-container, .upsell-container
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    a .img-flex-fill
+    {
+        display: none;
+    }
+    .d-flex .flex-fill
+    {
+        width: 100%;
+    }
+    .swiper-wrapper .swiper-slide
+    {
+        width: 240px !important;
+        margin-right: 15px;
+    }
+    .swiper-wrapper .swiper-slide img.img-clog
+    {
+        max-height: 82px;
+        width: auto;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .clog a.btn-overall .cx-button, .clog a.btn-overall .cx-button
+    {
+        box-shadow: inset 0 0 0 2px #3a3a3a;
+    }
+    .slide .block-laura
+    {
+        flex-direction: column;
+    }
+    .slide .block-laura a.img-laura
+    {
+        margin:0px;
+    }
+    .caya-landing-page .slide .slide-orange
+    {
+        min-height: 250px;
+        max-height: 250px;
+        margin-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+        min-width: unset;
+    }
+    .caya-landing-page .text-md-title
+    {
+        color: #3a3a3a;
+        font-size: 31px;
+        line-height: 36px;
+    }
+    .slide .d-flex
+    {
+        flex-direction: column;
+    }
+    .slide .d-flex .flex-fill
+    {
+        padding: 0px 30px;
+    }
+    .slide .img-flex-fill
+    {
+        display: none;
+    }
+    .swiper-wrapper .swiper-slide img.img-clog
+    {
+        max-height: 80px;
+    }
+    section.jibbitz a .block-jibbitz
+    {
+        flex-direction: column;
+    }
+    section.jibbitz a .block-jibbitz .img-jibbitz
+    {
+        margin-right: 0px;
+    }
+    section.jibbitz a .block-jibbitz .jibbitz-text-block, section.jibbitz a .block-jibbitz .jibbitz-text-block
+    {
+        min-width: unset;
+        min-height: 250px;
+        max-height: 250px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    section.clog .d-flex a.img-flex-fill
+    {
+        display: block !important;
+        margin-left: 0px !important;
+        padding: 0px 30px;
+    }
+    section.clog .d-flex
+    {
+        flex-direction: column;
+    }
+    section.jibbitz a .block-jibbitz .jibbitz-text-block h3.cx-heavy-brand-font 
+    {
+        margin-top: 0px;
+    }
+    .row-jibbitz
+    {
+        padding: 0px 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .row-jibbitz .d-md-none
+    {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .row-jibbitz .d-none
+    {
+        display: none;
+    }
+    section.jibbitz .btn-overall .jibbitz-pink
+    {
+        box-shadow: inset 0 0 0 2px #fff;
+        margin-bottom: 0px;
+    }
+    .hero .img-priyanka img
+    {
+        padding-top: 0px;
+    }
+    .clog a.btn-overall .cx-button
+    {
+        min-height: unset;
+        max-height: unset;
+        margin-top: 20px;
+    }
+    .flex-fill .electric_pink
+    {
+        padding: 0px 30px;
+    }
+    p.cx-brand-font.text-md-caption
+    {
+        font-size: 14px;
+    }
+    div#ClassicSwiper
+    {
+        margin-top: 15px;
+    }
+    div#ClassicSwiper .swiper-wrapper .owl-prev, div#SlideSwiper .owl-prev
+    {
+        position: absolute;
+        top: 70px;
+        right: auto;
+        left: -10px;
+    }
+    div#ClassicSwiper .owl-next, div#SlideSwiper .owl-next
+    {
+        position: absolute;
+        top: 70px;
+        left: auto;
+        right: -10px;
+    }
+    div#ClassicSwiper .swiper-wrapper, div#SlideSwiper .swiper-wrapper
+    {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-bottom: unset;
+    }
+    .outsideNavigation.swiperCarousel
+    {
+        width: calc(100% - 80px) !important;
+        margin-left: 40px;
+        margin-right: 40px;
+        position: relative;
+        margin-top: 15px;
+    }
+    div#SlideSwiper .owl-controls, div#ClassicSwiper .swiper-wrapper .owl-controls
+    {
+        display: block !important;
+    }
+    body.cms-come-as-you-are .cs_row
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+/*jibbitz*/
+.cms-jibbitz main#maincontent, body.categorypath-jibbitz.category-jibbitz.catalog-category-view main#maincontent
+{
+    max-width: unset;
+    padding: 0px;
+}
+body.categorypath-jibbitz.category-jibbitz.catalog-category-view main#maincontent .columns
+{
+    display: none;
+}
+.jibbitz-landing-page .cx_container-fluid
+{
+    padding: 0px 15px;
+}
+.jibbitz-landing-page .cx_container-fluid .cx_container-crocs
+{
+    padding: 0px 15px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.jibbitz-landing-page .hero
+{
+    margin: 70px auto;
+}
+.jibbitz-landing-page .hero .flex
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.jibbitz-landing-page .hero .cx-heavy-brand-font
+{
+    font-size: 70px;
+    line-height: 70px;
+    margin: 25px 0;
+    color: #016DA4;
+    text-shadow: unset;
+    text-align: left;
+    font-family: proxima_nova_extrabold;
+}
+.jibbitz-landing-page .hero .cx-brand-font
+{
+    font-size: 18px;
+    line-height: 24px;
+    color: #444;
+    text-shadow: unset;
+    text-align: left;
+    font-family: proxima_nova_regular;
+}
+.jibbitz-landing-page .hero .btn-overall
+{
+    margin: 25px 0px 25px -45px;
+    padding: 0;
+    align-items: normal;
+}
+.jibbitz-landing-page .hero .btn-overall .btn
+{
+    width: 240px;
+    padding: 7.5px;
+}
+.jibbitz-landing-page .hero .btn-overall .btn .cx-button
+{
+    color: #fff;
+    background-color: #016DA4;
+    border-color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 5px 15px 5px;
+    border-width: 2px;
+    line-height: 1.0;
+    text-shadow: unset;
+    font-family: proxima_nova_extrabold;
+    display: block;
+    width: 100%;
+}
+.jibbitz-landing-page .hero .down-arrow
+{
+    margin-top: 25px;
+}
+.jibbitz-landing-page .hero .btn-overall .btn .down-arrow .cx-brand-font
+{
+    font-size: 18px;
+    line-height: 24px;
+    color: #444;
+    text-shadow: unset;
+}
+.jibbitz-landing-page .hero img.img-responsive.hidden-xs
+{
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
+.jibbitz-landing-page .hero .down-arrow
+{
+    display: block;
+    margin: 0 auto;
+}
+.jibbitz-landing-page .hero .btn-overall .btn a.cx-button:hover, section.creative .flex .btn .cx-button:hover
+{
+    background-color: #fff !important;
+    border-color: #016DA4 !important;
+    color: #016DA4 !important;
+    border: 2px solid;
+}
+.jibbitz-landing-page
+{
+   background: url(../images/jibbitz/Bottom.jpg) no-repeat center 380px;
+}
+section.jibbitz
+{
+    /*width: 1100px;*/
+    width: 100%;
+    margin-bottom: 35px;
+}
+section.jibbitz .cx-heavy-brand-font
+{
+    margin: 130px auto 0px;
+    font-size: 60px;
+    line-height: 70px;
+    color: #fff;
+    text-shadow: unset;
+    text-align: center;
+    font-family: proxima_nova_extrabold;
+}
+section.jibbitz .embed-responsive
+{
+    margin: 40px auto;
+    /*padding-bottom: 300px;*/
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+section.jibbitz .paragraph-text
+{
+    font-size: 20px;
+    color: #fff;
+    font-family: proxima_nova_regular;
+}
+section.jibbitz .embed-responsive iframe
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    max-width: unset;
+}
+section.jibbitz .embed-responsive .paragraph-text
+{
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    text-shadow: unset;
+}
+section.social
+{
+    margin-bottom: 0px;
+}
+section.social .cx-heavy-brand-font
+{
+    font-size: 60px;
+    line-height: 70px;
+    text-shadow: unset;
+    color: #fff;
+    font-family: proxima_nova_extrabold;
+}
+section.social .paragraph-text
+{
+    margin: 15px auto 20px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+}
+section.social .flex-wrap img
+{
+    padding: 7.5px;
+}
+section.social .btn-overall .btn
+{
+    width: 240px;
+    margin: 20px auto;
+    padding: 7.5px;
+}
+section.social .btn-overall .btn .cx-button
+{
+  color: #016DA4;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 20px 15px 20px;
+    border-width: 2px;
+    line-height: 1.0;
+    text-shadow: unset;
+    border-color: #016DA4;
+    border: 2px solid;
+}
+section.social .btn-overall .btn .cx-button:hover
+{
+    color: #fff !important;
+    background-color: #016DA4 !important;
+    border-color: #016DA4 !important;
+}
+section.social .btn-overall .btn
+{
+    
+}
+section.creative
+{
+    padding-bottom: 40px;
+}
+section.creative img.img-responsive
+{
+    margin-top: 100px;
+}
+section.creative h2.cx-heavy-brand-font
+{
+    margin: 40px auto;
+    font-size: 60px;
+    line-height: 70px;
+    color: #016DA4;
+    text-shadow: unset;
+    font-family: proxima_nova_extrabold;
+}
+section.creative .flex .btn
+{
+    width: 240px;
+    padding: 7.5px;
+}
+section.creative .flex .btn .cx-button
+{
+    color: #fff;
+    background-color: #016DA4;
+    border-color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 20px 15px 20px;
+    border-width: 2px;
+    line-height: 1.0;
+    text-shadow:unset;
+    font-family: proxima_nova_extrabold;
+}
+/*.breadcrumbs
+{
+    display: none;
+}*/
+@media screen and (max-width: 768px)
+{
+    .breadcrumbs
+    {
+        display: block;
+    }
+    .jibbitz-landing-page .hero
+    {
+        margin: 5vw auto;
+    }
+    .jibbitz-landing-page .hero .cx-heavy-brand-font
+    {
+        font-size: 46px;
+        line-height: 46px;
+       display: block;
+       margin: 0 auto
+    }
+    .jibbitz-landing-page .hero .cx-brand-font
+    {
+        margin: 15px 0px;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+    }
+    .jibbitz-landing-page br.visible-xs
+    {
+        display: none !important;
+    }
+    .jibbitz-landing-page .hero .btn-overall
+    {
+        margin: 0px auto;
+    }
+    .jibbitz-landing-page .hero .btn-overall .btn .cx-button
+    {
+        color: #fff;
+        background-color: #016DA4;
+        border-color: #fff;
+        text-align: center;
+        font-size: 15px;
+        padding: 15px 5px 15px 5px;
+        border-width: 2px;
+        line-height: 1.0;
+    }
+   /* .jibbitz-landing-page
+    {
+        background: url("../images/jibbitz/050819Background-Top-M.png") no-repeat center 380px;
+    }*/
+    section.jibbitz
+    {
+        width: 100%;
+    }
+    section.jibbitz .cx-heavy-brand-font
+    {
+        margin-top: 187px;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    section.jibbitz .cx-brand-font
+    {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    section.social
+    {
+        margin-bottom: 0px;
+    }
+    section.social .paragraph-text
+    {
+        margin: 15px auto 16px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    section.social a.flex-wrap
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    section.social .btn-overall .btn
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+}   
+@media screen and (min-width: 320px) and (max-width: 425px)
+{
+    .jibbitz-landing-page 
+    {
+        background: url(../images/jibbitz/050819Background-Top-M.png) no-repeat center 655px;
+        background-size: 100%;
+    }
+    section.social .cx-heavy-brand-font
+    {
+        margin-top: 93px;
+        font-size: 38px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+    .jibbitz-landing-page 
+    {
+        background: url(../images/jibbitz/Bottom.jpg) no-repeat center 140vw;
+        background-size: 100%;
+    }
+   section.social .cx-heavy-brand-font
+    {
+        margin-top: 0px;
+    }
+}
+/*jibbitzdropdown*/
+.main-jibbitz
+{
+    width: 600px;
+    font-family: "proxima_nova_extrabold";
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+.main-jibbitz .jibbitz-megamenu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+a#mm-jibbitz-nav-menuitem-0
+{
+    padding: 85px 0;
+    width: 100%;
+    border: 1.5px solid #ebebeb;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+    background: url("../images/jibbitz/OrangeJibbitz1.jpg");
+}
+#mm-jibbitz-nav-menuitem-0 p.lg-text, a#mm-jibbitz-nav-menuitem-2 p.lg-text
+{
+    font-size: 32px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#mm-jibbitz-nav-menuitem-0 p.sm-text, a#mm-jibbitz-nav-menuitem-2 p.sm-text
+{
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+a#mm-jibbitz-nav-menuitem-2
+{
+    padding: 85px 0;
+    width: 100%;
+    border: 1.5px solid #ebebeb;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: url("../images/jibbitz/Green-Jibbitz3.jpg");
+}
+
+/*mobile_menu_jibbitz*/
+@media screen and (max-width: 768px)
+{
+    .sw-megamenu.navigation li.Charms .menu-top-block
+    {
+        display: block !important;
+    }
+    .menu-top-block .main-jibbitz
+    {
+        width: 100%;
+    }
+    .menu-top-block .main-jibbitz .jibbitz-megamenu
+    {
+        flex-direction: column;
+    }
+    .sw-megamenu.navigation li.Charms .row
+    {
+        display: none;
+    }
+    .catalog-product-view #mb-ajaxsuite-close
+    {
+        display: block !important;
+    }
+    header.page-header.sticky-header .navigation li.level0 > .level-top
+    {
+        padding: 13px 36px 13px 15px !important;
+    }
+}
+.catalog-product-view #mb-ajaxsuite-close
+{
+    display: block !important;
+}
+/*header changes*/
+@media screen and (min-width: 768px)
+{
+    header.page-header.sticky-header .navigation li.level0 > .level-top
+    {
+        padding: 0 8px !important;
+    }
+}
+/*CAYA2020 END*/
+/*static banner on homepage*/
+.static-banner
+{
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 768px)
+{
+    .static-banner
+    {
+        padding: 20px 15px 20px 15px;
+    }
+}
