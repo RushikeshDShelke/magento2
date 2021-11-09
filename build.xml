@@ -19,7 +19,7 @@
    </target>
    <target name="casperjs" description="Run casperjs">
          <exec executable="ssh" failonerror="true">
-              <arg line="galera@10.0.0.4 casperjs run.js" />
+              <arg line="galera@10.0.0.4 casperjs test /usr/share/casperjs/tests/test.js --url=https://galera.invanos.net" />
          </exec>
    </target>
    <target name="run task" description="Run target one by one">
